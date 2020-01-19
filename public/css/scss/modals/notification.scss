@@ -1,0 +1,83 @@
+.v--modal-overlay[data-modal="notification"] {
+    background: transparent;
+    z-index: 20000;
+    width: 100%;
+    .v--modal-background-click {
+        width: 100%;
+        height: 100%;
+        .v--modal {
+            top: 50px !important;
+            left:1150px !important;
+            height: 170px !important;
+            width: 400px !important;
+        }
+        .v--modal-box {
+            padding-top: 80px;
+            background-color: white;
+            box-shadow: 0 2px 20px 0 rgba(169, 131, 107, 0.7);
+            border: 1px solid #ddccb8;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            display: flex;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .notification-box {
+            width: 100%;
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .close-button {
+                width: 90%;
+                display: flex;
+                justify-content: flex-end;
+                img:hover {
+                    cursor: pointer;
+                    transform: scale(1.2);
+                    transition: 0.1s ease-in-out;
+                }
+            }
+            .product-info {
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                h1 {
+                    color: $primaryColor;
+                    font-family: 'LatoBold';
+                    font-size: 9pt;
+                    text-transform: uppercase;
+                }
+                h2 {
+                    color: $secondaryColor;
+                    font-family: 'LatoRegular';
+                    font-size: 8pt;
+                }
+                h3 {
+                    color: $primaryColor;
+                    font-family: 'LatoRegular';
+                    font-size: 7pt;
+                    text-transform: uppercase;
+                }
+            }
+            .message {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                border-top: 1px solid #f5f2ee;
+                p {
+                    color: $primaryColor;
+                    font-family: 'LatoRegular';
+                    font-size: 7pt;
+                    text-align: center;
+                }
+
+            }
+        }
+    }
+}
+ 

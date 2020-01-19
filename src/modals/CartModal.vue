@@ -4,6 +4,7 @@
       transition="scale"
       height="800"
       width="400"
+      class="cart-module"
     >
       <div class="cart-modal-content">
           <!-- <div class="ct-top-right" @click="$modal.hide('cart-modal')"></div> -->
@@ -73,7 +74,6 @@ export default {
 
   methods: {
     handleDelete(watch) {
-      watchesService.deleteWatch(watch)
       this.$store.commit('removeWatchFromCartMutation', watch)
     },
 

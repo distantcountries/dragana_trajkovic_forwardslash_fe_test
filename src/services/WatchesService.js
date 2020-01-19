@@ -210,6 +210,10 @@ export default class WatchesService {
     }
 
     addWatch(watch) {
+        if(watch.orderQuantity===0) {
+            watch.orderQuantity=1
+            watch.addToCart = true
+        }
         if(watch.orderQuantity>0) {
             watch.addToCart = true
             watch.totalAmountOrdered = watch.orderQuantity * watch.salePrice
@@ -221,10 +225,6 @@ export default class WatchesService {
     showImage(watchImg, watchId) {
         let watch = watches.find(watch => watch.id == watchId)
         return watch.selectedImg = watchImg.url
-    }
-
-    deleteWatch(watch) {
-        watch.orderQuantity = 0
     }
 }
 

@@ -471,8 +471,6 @@ body {
     display: flex;
     justify-content: center; }
     .v--modal-overlay[data-modal="cart-modal"] .v--modal-background-click .v--modal-box {
-      top: 0;
-      right: 0;
       padding-top: 80px;
       background-color: white;
       box-shadow: 0 2px 20px 0 rgba(169, 131, 107, 0.7);
@@ -593,5 +591,74 @@ body {
         transition: 0.1s ease-in-out; }
       .cart-single-product .quantity .icons button:focus {
         outline: none; }
+
+.v--modal-overlay[data-modal="notification"] {
+  background: transparent;
+  z-index: 20000;
+  width: 100%; }
+  .v--modal-overlay[data-modal="notification"] .v--modal-background-click {
+    width: 100%;
+    height: 100%; }
+    .v--modal-overlay[data-modal="notification"] .v--modal-background-click .v--modal {
+      top: 50px !important;
+      left: 1150px !important;
+      height: 170px !important;
+      width: 400px !important; }
+    .v--modal-overlay[data-modal="notification"] .v--modal-background-click .v--modal-box {
+      padding-top: 80px;
+      background-color: white;
+      box-shadow: 0 2px 20px 0 rgba(169, 131, 107, 0.7);
+      border: 1px solid #ddccb8;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      display: flex;
+      width: 100%;
+      padding: 0;
+      margin: 0; }
+    .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box {
+      width: 100%;
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box .close-button {
+        width: 90%;
+        display: flex;
+        justify-content: flex-end; }
+        .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box .close-button img:hover {
+          cursor: pointer;
+          transform: scale(1.2);
+          transition: 0.1s ease-in-out; }
+      .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box .product-info {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box .product-info h1 {
+          color: #2f4061;
+          font-family: 'LatoBold';
+          font-size: 9pt;
+          text-transform: uppercase; }
+        .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box .product-info h2 {
+          color: #a0765b;
+          font-family: 'LatoRegular';
+          font-size: 8pt; }
+        .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box .product-info h3 {
+          color: #2f4061;
+          font-family: 'LatoRegular';
+          font-size: 7pt;
+          text-transform: uppercase; }
+      .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box .message {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        border-top: 1px solid #f5f2ee; }
+        .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box .message p {
+          color: #2f4061;
+          font-family: 'LatoRegular';
+          font-size: 7pt;
+          text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

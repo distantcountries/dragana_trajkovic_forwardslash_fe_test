@@ -7,9 +7,13 @@
         height: 100%;
         display: flex;
         justify-content: center;
+        .v--modal {
+            // height: 800px !important;
+            // width: 400px !important;
+            // top: 50px !important;
+            // left:1200px !important;
+        }
         .v--modal-box {
-            top:0;
-            right:0;
             padding-top: 80px;
             background-color: white;
             box-shadow: 0 2px 20px 0 rgba(169, 131, 107, 0.7);

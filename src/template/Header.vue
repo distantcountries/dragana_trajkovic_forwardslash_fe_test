@@ -15,6 +15,7 @@
                     <div class="cart-number">
                         <p>{{watchesInCart}}</p>
                     </div>
+                    <Notification />
                 </div>
                 <div class="total-amount">
                     <p>Total:</p>
@@ -26,30 +27,35 @@
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                showCart: false
-            }
-        },
+import Notification from './../modals/Notification'
+export default {
+    components: {
+        Notification
+    },
 
-        computed: {
-            watchesInCart() {
-                return this.$store.getters.totalItemsOrdered
-            }, 
-            totalAmount() {
-                return this.$store.getters.totalAmountOrdered
-            }
-        },
+    data() {
+        return {
+            showCart: false
+        }
+    },
 
-        methods: {
+    computed: {
+        watchesInCart() {
+            return this.$store.getters.totalItemsOrdered
+        }, 
+        totalAmount() {
+            return this.$store.getters.totalAmountOrdered
+        }
+    },
+
+    methods: {
         showCartModal () {
             this.$modal.show('cart-modal');
         },
         hide () {
             this.$modal.hide('cart-modal');
         }
-        }
     }
+}
 </script>
 

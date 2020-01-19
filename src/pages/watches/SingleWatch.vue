@@ -137,9 +137,14 @@ export default {
 
         handleAdd(watch) {
             watchesService.addWatch(watch)
+            this.$modal.show('notification')
+            this.$store.commit('notifyAddedItemMutation', watch)
             this.$store.commit('watchInCartMutation', watch)
             this.$store.commit('totalItemsInCartMutation', watch)
             this.$store.commit('totalAmountOrderedMutation', watch)
+
+            this.$store.dispatch('automaticallyCloseNotification')
+            this.$store.dispatch('anableNotificationAfterAutomaticallyClosed')
         }, 
 
         showMoreDetails(watchId) {
