@@ -1,0 +1,171 @@
+.v--modal-overlay[data-modal="cart-modal"] {
+    background: transparent;
+    display: flex;
+    justify-content: flex-end;
+    .v--modal-background-click {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        .v--modal-box {
+            top:0;
+            right:0;
+            padding-top: 80px;
+            background-color: white;
+            box-shadow: 0 2px 20px 0 rgba(169, 131, 107, 0.7);
+            border: 1px solid #ddccb8;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+    }
+}
+
+.cart-modal-content {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    header {
+        width: 100%;
+        border-bottom: 1px solid #ddccb8;
+        h1 {
+            font-family: 'LatoBold';
+            font-size: 10pt;
+            color: $primaryColor;
+            padding-left: 20px;
+            padding-bottom: 5px;
+        }
+    }
+    .products {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .cart-single-product {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid #ddccb8;
+        .footer-wrapper {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            .total-amount {
+                width: 50%;
+                color: $primaryColor;
+                display: flex;
+                flex-direction: column;
+                // align-items: center;
+                h4 {
+                    font-family: 'LatoRegular';
+                    color: $primaryColor;
+                    font-size: 8pt;
+                }
+                h5 {
+                    font-family: 'LatoBold';
+                    color: $primaryColor;
+                    font-size: 9pt;
+                }
+            }
+            .checkout-button {
+                width: 50%;
+                background-color: $primaryColor;
+                display: flex;
+                justify-content: center;
+                h6 {
+                    color: white;
+                    text-transform: uppercase;
+                    font-family: 'LatoBold';
+                    font-size: 8pt;
+                    text-align: center;
+                }
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 0 1px 1px 1px #808080;
+                }
+            }
+        }
+    }
+}
+
+.cart-single-product {
+    .close-button {
+        width: 15%;
+        button {
+            border: none;
+            background: none;
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.2);
+                transition: 0.1s ease-in-out;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .title {
+        width: 50%;
+        h2 {
+            font-family: 'LatoBold';
+            color: $primaryColor;
+            font-size: 8pt;
+            text-transform: uppercase;
+        }
+        h3 {
+            font-family: 'LatoRegular';
+            color: $secondaryColor;
+            font-size: 6pt;
+        }
+    }
+    .price {
+        width: 20%;
+        p {
+            font-family: 'LatoBold';
+            color: $secondaryColor;
+            font-size: 6pt;
+        }
+    }
+    .quantity {
+        width: 15%;
+        display: flex;
+        justify-content: space-between;
+        .number {
+            width: 50%;
+            font-family: 'LatoBold';
+            color: $secondaryColor;
+            font-size: 8pt;
+        }
+        .icons {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            button {
+                border: none;
+                background: none;
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.2);
+                    transition: 0.1s ease-in-out;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+

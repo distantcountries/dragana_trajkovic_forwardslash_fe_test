@@ -1,0 +1,48 @@
+.all-watches-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .all-watches {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        .labels {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #dbcdc4;
+            p {
+                font-family: 'LatoRegular';
+                font-size: 8pt;
+                color: #7583a0;
+            }
+        }
+    }
+}
+
+.watches-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    ul {
+        list-style-type: none;
+        li {
+            padding: 15px;
+        }
+        .selected-watch {
+            border: 1px solid #ddccb8;
+            box-shadow: 0 0 43px rgba(169, 131, 107, 0.2);
+            animation: fadeIn ease 1s;
+            @keyframes fadeIn {
+                0% {
+                    opacity:0.1;
+                }
+                100% {
+                    opacity:1;
+                }
+            }
+        }
+        .watch {
+            border: none;
+        }
+    }
+}

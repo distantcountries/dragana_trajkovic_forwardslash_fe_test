@@ -1,0 +1,13 @@
+@import "base";
+@import "fonts";
+@import "global";
+
+@import "template/header";
+@import "template/footer";
+
+@import "pages/watches-page/watches-page.scss";
+@import "pages/watches-page/search-bar";
+@import "pages/watches-page/all-watches.scss";
+@import "pages/watches-page/single-watch.scss";
+
+@import "modals/cart-modal.scss";
