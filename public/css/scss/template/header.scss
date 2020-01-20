@@ -1,81 +1,105 @@
 .header-wrapper {
     width: 100%;
-    height: 80px;
+    height: 78px;
     display: flex;
     justify-content: center;
-    box-shadow: 0px 10px 20px -5px rgba(221,204, 184, 0.8);  
-    position: sticky;
-    top: 0;
-    z-index: 10000;
     background-color: white;
     .header {
-        width: 80%;
+        width: 73.5%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         color: $primaryColor;
-        .header-segment {
-            width: 15%;
-        }
     }
 }
 
 .header-logo {
+    height: 100%;
     border-right: 1px solid #e6e6e6;
-    padding: 10px 20px 10px 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: 15.2%;
     h1 {
-        font-size: 12pt;
+        font-size: 18pt;
+        letter-spacing: 11px;
         font-family: 'ButlerBlack';
         text-transform: uppercase;
+        line-height: 18pt;
     }
     h2 {
         text-transform: uppercase;
         font-family: 'FontAwesome5Regular';
-        font-size: 5.5pt;
+        font-size: 8pt;
+        letter-spacing: 5.5px;
+        margin-top: 5px;
     }
 }
 
 .header-cart {
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-left: 1px solid #e6e6e6;
-    padding: 10px 0 10px 20px;
-    
+    border-right: 1px solid #e6e6e6;
+    width: 15.2%;
     .cart {
-        width: 30%;
+        height: 100%;
         position: relative;
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: 0.1s ease-in-out;
+        }
         .cart-icon {
-            width: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -17px;
+            img {
+                max-width: 100%;
+            }
         }
         .cart-number {
-            width: 30px;
-            height: 30px;
+            width: 20px;
+            height: 20px;
             background-color: $primaryColor;
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
             position: absolute;
-            top: -20px;
-            left: 15px;
+            top: 15px;
+            left: 41px;
             z-index: 10; 
             p {
                 color: white;
+                font-size: 9pt;
+                font-family: 'LatoRegular';
             }
         }
     }
     .total-amount {
-        p{
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        p { 
             font-family: 'LatoBold';
-            font-size: 6pt;
+            font-size: 8pt;
+            line-height: 6pt;
+            margin-top: -4px;
         }
         h3 {
             font-family: 'LatoRegular';
-            font-size: 9pt;
+            font-size: 14pt;
             color: $secondaryColor;
+            margin-top: 4px;
         }
     }
 }

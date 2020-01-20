@@ -3,17 +3,45 @@
     display: flex;
     justify-content: center;
     .all-watches {
-        width: 80%;
+        width: 73.5%;
         display: flex;
         flex-direction: column;
         .labels {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
+            align-items: center;
             border-bottom: 1px solid #dbcdc4;
-            p {
-                font-family: 'LatoRegular';
-                font-size: 8pt;
-                color: #7583a0;
+            padding: 48px 0 14px;
+            .empty-div {
+                width: 6%;
+            }
+            .image {
+                width: 6.5%;
+            }
+            .brand {
+                width: 21.8%;
+            }
+            .scu {
+                width: 17.5%;
+            }
+            .price {
+                width: 12.5%;
+            }
+            .sale-price {
+                width: 13.5%;
+            }
+            .quantity {
+                width: 7.8%;
+            }
+            .segment {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                p {
+                    font-family: 'LatoRegular';
+                    font-size: 12pt;
+                    color: #7583a0;
+                }
             }
         }
     }
@@ -25,8 +53,11 @@
     flex-direction: column;
     ul {
         list-style-type: none;
+        padding: 0;
+        margin: 0;
         li {
-            padding: 15px;
+            padding: 0;
+            margin: 0;
         }
         .selected-watch {
             border: 1px solid #ddccb8;

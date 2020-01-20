@@ -1,22 +1,20 @@
 <template>
     <div class="header-wrapper">
         <div class="header">
-            <div class="header-logo header-segment">
+            <div class="header-logo">
                 <h1>Ipsums</h1>
                 <h2>Dev test task</h2>
             </div>
-            <div class="header-cart header-segment">
-                <div class="cart">
+            <div class="header-cart">
+                <div class="cart" @click="$modal.show('cart-modal')">
                     <div class="cart-icon">
-                        <img src="./../../public/img/icons/cart-brown.png" 
-                            @click="$modal.show('cart-modal')"
-                        />
+                        <img src="./../../public/img/icons/cart-brown.png" />
                     </div>
                     <div class="cart-number">
                         <p>{{watchesInCart}}</p>
                     </div>
-                    <Notification />
                 </div>
+                <Notification />
                 <div class="total-amount">
                     <p>Total:</p>
                     <h3>${{totalAmount}}</h3>

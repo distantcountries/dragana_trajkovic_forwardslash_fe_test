@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    <Searach />
+    <SearchBar />
     <WatchesPage />
     <Footer />
   </div>
@@ -9,7 +9,7 @@
 
 <script>
 import Header from './template/Header'
-import Searach from './template/SearchBar'
+import SearchBar from './template/SearchBar'
 import WatchesPage from './pages/watches/WatchesPage'
 import Footer from './template/Footer'
 
@@ -19,7 +19,7 @@ export default {
     Header, 
     WatchesPage,
     Footer,
-    Searach
+    SearchBar
   }
 }
 </script>

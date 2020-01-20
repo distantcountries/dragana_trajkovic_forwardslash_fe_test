@@ -6,6 +6,7 @@
       v-if="cartNotification"
     >
         <!-- <div class="ct-top-right" @click="$modal.hide('notification')"></div> -->
+        <!-- <div class="arrow-up"></div> -->
         <div class="notification-box">
             <div class="close-button" @click="handleClose">
                 <img src="img/icons/close.png"  />

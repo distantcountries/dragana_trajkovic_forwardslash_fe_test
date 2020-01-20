@@ -39,7 +39,7 @@ const watches = [
         moreDetails: false,
         orderQuantity: 0,
         addToCart: false,
-        color: 'Silver/Brown', 
+        color: 'Black', 
         band: 'Solid', 
         material: 'Titanium/Cobarion',
         features: 'GPS, Waterproof, Bluetooth', 

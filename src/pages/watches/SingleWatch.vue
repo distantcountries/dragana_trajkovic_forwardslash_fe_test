@@ -22,11 +22,11 @@
                 <h3>{{watch.sku}}</h3>
             </div>
             <div class="price">
-                <p>${{watch.price}}</p>
+                <p>${{watch.price}}.00</p>
             </div>
             <div class="sale-price">
-                <p v-if="watch.salePrice">${{watch.salePrice}}</p>
-                <p v-else>${{watch.price}}</p>
+                <p v-if="watch.salePrice">${{watch.salePrice}}.00</p>
+                <p v-else>${{watch.price}}.00</p>
             </div>
             <div class="quantity">
                 <div class="number">
@@ -75,26 +75,33 @@
             </div>
         </div>
         <div class="more-details" v-if="watch.moreDetails">
-            <div class="segment"  >
-                <div class="gallery-images" v-for="(image, index) in watch.images" :key="index">
-                    <div class="img-preview" @click="handleImage(image, watch.id)"><img :src="image.url"/></div>
-                </div> 
+            <div class="empty-div"></div>
+            <div class="segment gallery-images-wrapper1">
+                <div class="gallery-images-wrapper2">
+                    <div class="gallery-images" v-for="(image, index) in watch.images" :key="index">
+                        <img :src="image.url" @click="handleImage(image, watch.id)"/>
+                    </div> 
+                </div>
             </div>
-            <div class="color segment">
-                <p>Color: {{watch.color}}</p>
+            <div class="more-details-text">
+                <div class="color segment">
+                    <p>Color: {{watch.color}}</p>
+                </div>
+                <div class="band segment">
+                    <p>Band: {{watch.band}}</p>
+                </div>
+                <div class="material segment">
+                    <p>Case/bezel material: {{watch.material}}</p>
+                </div>
+                <div class="features segment">
+                    <p>Features: {{watch.features}}</p>
+                </div>
             </div>
-            <div class="band segment">
-                <p>Band: {{watch.band}}</p>
-            </div>
-            <div class="material segment">
-                <p>Case/bezel material: {{watch.material}}</p>
-            </div>
-            <div class="features segment">
-                <p>Features: {{watch.features}}</p>
-            </div>
-            <div class="fullscreen-button segment">
-                <img @click="handleFullscreen" src="img/icons/fullscreen.png"/>
-                <span class="tooltip">Fullscreen</span>
+            <div class="fullscreen-button-wrapper segment">
+                <div class="fullscreen-button">
+                    <img @click="handleFullscreen" src="img/icons/fullscreen.png"/>
+                    <span class="tooltip" @click="handleFullscreen">Fullscreen</span>
+                </div>
             </div>
         </div>
     </div>
