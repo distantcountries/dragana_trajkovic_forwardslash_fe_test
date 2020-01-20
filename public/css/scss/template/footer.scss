@@ -170,9 +170,7 @@
                     }
                 }
             }
-
         }
-        
     }
     .footer-border {
         margin: 20px 0;
@@ -180,7 +178,6 @@
         height: 100%;
     }
 }
-
 
 .footer-copyright {
     width: 100%;
@@ -193,3 +190,35 @@
     }
 }
 
+@media only screen and (max-width: 960px) {
+    .footer-wrapper {
+        margin-top: 30px;
+        .footer {
+            width: 95%;
+            .footer-sections {
+                padding-top: 10px;
+            }
+        }
+    }
+} 
+
+@media only screen and (max-width: 960px) {
+    .footer-sections {
+        padding-top: 10px;
+        h1 {
+            font-size: 16pt;
+            letter-spacing: 5px;
+        }
+        a {
+            h2 {
+                font-size: 10pt;
+                letter-spacing: 1px;
+            }
+        }
+        p {
+            font-size: 9pt;
+        }
+    }
+
+
+} 

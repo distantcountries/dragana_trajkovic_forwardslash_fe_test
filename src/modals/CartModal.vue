@@ -2,56 +2,55 @@
     <modal 
       name="cart-modal"
       transition="scale"
-      height="800"
-      width="400"
       class="cart-module"
     >
       <div class="cart-modal-content">
           <!-- <div class="ct-top-right" @click="$modal.hide('cart-modal')"></div> -->
-
-        <header>
-          <h1>My Cart</h1>
-        </header>
-
-        <div class="products">
-          <div class="cart-single-product" v-for="(watch, index) in watchesInCart" :key="index">
-                <div class="close-button">
-                  <button @click="handleDelete(watch)"><img src="./../../public/img/icons/close.png"/></button>
-                </div>
-                <div class="title">
-                  <h2>
-                    {{watch.title}}
-                  </h2>
-                  <h3>
-                    Slim Collection Series 5
-                  </h3>
-                </div>
-                <div class="price">
-                  <p>${{watch.totalAmountOrdered}}</p>
-                </div>
-                <div class="quantity">
-                  <div class="number">
-                        <p>{{watch.orderQuantity}}</p>
-                  </div>
-                  <div class="icons">
-                      <button @click="handleIncrement(watch)"><img src="./../../public/img/icons/arrow-top.png"/></button>
-                      <button @click="handleDecrement(watch)"><img src="./../../public/img/icons/arrow-bottom.png"/></button>
-                  </div>
-                </div>
+        <div class="header-wrapper">
+          <div class="header">
+            <h1>My Cart</h1>
           </div>
         </div>
-
-        <footer>
-          <div class="footer-wrapper">
+        <div class="products">
+          <div class="cart-single-product-wrapper" v-for="(watch, index) in watchesInCart" :key="index">
+            <div class="cart-single-product">
+              <div class="close-button">
+                <button @click="handleDelete(watch)"><img src="./../../public/img/icons/close.png"/></button>
+              </div>
+              <div class="title">
+                <h2>
+                  {{watch.title}}
+                </h2>
+                <h3>
+                  Slim Collection Series 5
+                </h3>
+              </div>
+              <div class="price">
+                <p>${{watch.totalAmountOrdered}}.00</p>
+              </div>
+              <div class="quantity">
+                <div class="number">
+                      <p>{{watch.orderQuantity}}</p>
+                </div>
+                <div class="icons">
+                    <button @click="handleIncrement(watch)"><img src="./../../public/img/icons/arrow-top.png"/></button>
+                    <button @click="handleDecrement(watch)"><img src="./../../public/img/icons/arrow-bottom.png"/></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-module-footer-wrapper">
+          <div class="footer">
             <div class="total-amount">
               <h4>Total:</h4>
-              <h5>${{totalAmount}}</h5>
+              <h5>${{totalAmount}}.00</h5>
             </div>
             <div class="checkout-button" @click="handleCheckout">
               <h6>Checkout</h6>
             </div>
           </div>
-        </footer>
+        </div>
       </div>
     </modal>
 </template>

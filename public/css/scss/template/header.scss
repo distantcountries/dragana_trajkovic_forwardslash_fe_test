@@ -10,6 +10,7 @@
         justify-content: space-between;
         align-items: center;
         color: $primaryColor;
+        flex-wrap: wrap;
     }
 }
 
@@ -103,3 +104,31 @@
         }
     }
 }
+
+@media only screen and (max-width: 1260px) {
+    .header {
+        width: 85%;
+    }
+    .header-logo {
+        width: 25%;
+    }
+    .header-cart {
+        width: 25%;
+    }
+} 
+@media only screen and (max-width: 960px) {
+    .header-logo {
+        width: 36%;
+    }
+    .header-cart {
+        width: 35%;
+    }
+} 
+// @media only screen and (max-width: 480px) {
+//     .header-logo {
+//         width: 90%;
+//     }
+//     .header {
+//         flex-direction: column;
+//     }
+// } 

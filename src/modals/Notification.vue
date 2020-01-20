@@ -27,7 +27,6 @@
                 <p>Has been successfully added to your cart!</p>
             </div>
         </div>
-
     </modal>
 </template>
 

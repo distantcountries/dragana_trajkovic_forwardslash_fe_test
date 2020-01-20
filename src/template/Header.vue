@@ -17,7 +17,7 @@
                 <Notification />
                 <div class="total-amount">
                     <p>Total:</p>
-                    <h3>${{totalAmount}}</h3>
+                    <h3>${{totalAmount}}.00</h3>
                 </div>
             </div>
         </div>

@@ -6,10 +6,10 @@
         width: 100%;
         height: 100%;
         .v--modal {
-            top: 50px !important;
-            left:1150px !important;
-            height: 170px !important;
-            width: 400px !important;
+            top: 85px !important;
+            left:56.5% !important;
+            height: 150px !important;
+            width: 450px !important;
         }
         .v--modal-box {
             padding-top: 80px;
@@ -26,13 +26,13 @@
         }
         .notification-box {
             width: 100%;
-            padding: 20px 0;
+            padding-top: 20px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             .close-button {
-                width: 90%;
+                width: 92%;
                 display: flex;
                 justify-content: flex-end;
                 img:hover {
@@ -42,37 +42,56 @@
                 }
             }
             .product-info {
-                width: 80%;
+                width: 85%;
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
-                h1 {
-                    color: $primaryColor;
-                    font-family: 'LatoBold';
-                    font-size: 9pt;
-                    text-transform: uppercase;
+                align-items: flex-start;
+                padding-bottom: 25px;
+                .image {
+                    width: 10%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    img {
+                        max-width: 100%;
+                    }
                 }
-                h2 {
-                    color: $secondaryColor;
-                    font-family: 'LatoRegular';
-                    font-size: 8pt;
+                .title {
+                    width: 55%;
+                    h1 {
+                        color: $primaryColor;
+                        font-family: 'LatoBold';
+                        font-size: 14pt;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                    }
+                    h2 {
+                        color: $secondaryColor;
+                        font-family: 'LatoRegular';
+                        font-size: 12pt;
+                    }
                 }
-                h3 {
-                    color: $primaryColor;
-                    font-family: 'LatoRegular';
-                    font-size: 7pt;
-                    text-transform: uppercase;
+                .sku {
+                    width: 30%;
+                    h3 {
+                        color: $primaryColor;
+                        font-family: 'LatoRegular';
+                        font-size: 10pt;
+                        text-transform: uppercase;
+                    }
                 }
             }
             .message {
                 display: flex;
                 width: 100%;
                 justify-content: center;
+                align-items: center;
                 border-top: 1px solid #f5f2ee;
+                padding: 15px 0;
                 p {
                     color: $primaryColor;
                     font-family: 'LatoRegular';
-                    font-size: 7pt;
+                    font-size: 11pt;
                     text-align: center;
                 }
 
@@ -80,13 +99,3 @@
         }
     }
 }
-
-.arrow-up {
-    width: 0; 
-    height: 0; 
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid black;
-    // margin-top: 20px;
-  }
- 
