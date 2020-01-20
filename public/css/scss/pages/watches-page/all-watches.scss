@@ -63,6 +63,8 @@
             border: 1px solid #ddccb8;
             box-shadow: 0 0 43px rgba(169, 131, 107, 0.2);
             animation: fadeIn ease 1s;
+            padding-top: 2px;
+            margin-bottom: -13px;
             @keyframes fadeIn {
                 0% {
                     opacity:0.1;

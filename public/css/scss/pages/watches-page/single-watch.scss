@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 16px;
+    padding-top: 10px;
 }
 
 .visible-details {
@@ -10,6 +10,9 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    height: 60px;
+    padding-top: 5px;
+    margin: 8px 0;
     h1 {
         font-family: 'LatoBold';
         font-size: 14pt;
@@ -154,15 +157,16 @@
                 max-width: 100%;
             }
             h4 {
-                font-family: 'LatoBold';
+                font-family: 'LatoRegular';
                 font-size: 12pt;
                 text-transform: uppercase;
-                letter-spacing: 3px;
+                letter-spacing: 4px;
             }
             h5 {
                 font-family: 'LatoRegular';
-                font-size: 5.5pt;
+                font-size: 9pt;
                 text-transform: uppercase;
+                color: #2f4061;
             }
         }
         .add {
@@ -179,10 +183,16 @@
         .added {
             background-color: #546b95;
             color: white; 
+            img {
+                padding-left: 12px;
+            }
         }
         .unabled {
             background-color: white;
             color: $primaryColor;
+            img {
+                margin-right: 5px;
+            }
         }
     }
     .show-more {
@@ -231,8 +241,8 @@
     align-items: center;
     border-top: 1px solid #dbcdc4;
     animation: fadeIn ease 1s;
-    margin-top: 18px;
-    padding: 13px 0;
+    margin-top: 14px;
+    padding: 14px 0 18px;
     @keyframes fadeIn {
         0% {
             opacity:0.1;
