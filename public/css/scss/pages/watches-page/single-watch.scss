@@ -240,9 +240,9 @@
     justify-content: flex-start;
     align-items: center;
     border-top: 1px solid #dbcdc4;
-    animation: fadeIn ease 1s;
     margin-top: 14px;
     padding: 14px 0 18px;
+    animation: fadeIn ease 1s;
     @keyframes fadeIn {
         0% {
             opacity:0.1;

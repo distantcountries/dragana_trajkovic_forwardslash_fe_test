@@ -3,9 +3,10 @@
       name="cart-modal"
       transition="scale"
       class="cart-module"
+      :scrollable="true"
+      height="auto"
     >
       <div class="cart-modal-content">
-          <!-- <div class="ct-top-right" @click="$modal.hide('cart-modal')"></div> -->
         <div class="header-wrapper">
           <div class="header">
             <h1>My Cart</h1>
@@ -30,11 +31,11 @@
               </div>
               <div class="quantity">
                 <div class="number">
-                      <p>{{watch.orderQuantity}}</p>
+                  <p>{{watch.orderQuantity}}</p>
                 </div>
                 <div class="icons">
-                    <button @click="handleIncrement(watch)"><img src="./../../public/img/icons/arrow-top.png"/></button>
-                    <button @click="handleDecrement(watch)"><img src="./../../public/img/icons/arrow-bottom.png"/></button>
+                  <button @click="handleIncrement(watch)"><img src="./../../public/img/icons/arrow-top.png"/></button>
+                  <button @click="handleDecrement(watch)"><img src="./../../public/img/icons/arrow-bottom.png"/></button>
                 </div>
               </div>
             </div>
@@ -112,6 +113,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-</style>

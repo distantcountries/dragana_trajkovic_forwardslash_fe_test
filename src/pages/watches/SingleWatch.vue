@@ -149,7 +149,6 @@ export default {
             this.$store.commit('watchInCartMutation', watch)
             this.$store.commit('totalItemsInCartMutation', watch)
             this.$store.commit('totalAmountOrderedMutation', watch)
-
             this.$store.dispatch('automaticallyCloseNotification')
             this.$store.dispatch('anableNotificationAfterAutomaticallyClosed')
         }, 
