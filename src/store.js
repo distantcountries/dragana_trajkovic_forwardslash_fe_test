@@ -88,8 +88,8 @@ export const store = new Vuex.Store({
         cartNotificationTrueAction(context) {
             setTimeout(() => {
                 context.commit('cartNotificationTrueMutation')
-            }, 10)
-        }, 
+            }, 100)
+        },
         automaticallyCloseNotification(context) {
             setTimeout(() => {
                 context.commit('cartNotificationFalseMutation')

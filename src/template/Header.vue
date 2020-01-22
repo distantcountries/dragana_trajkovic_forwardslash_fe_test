@@ -15,6 +15,7 @@
                     </div>
                 </div>
                 <Notification />
+                <CartModal />
                 <div class="total-amount">
                     <p>Total:</p>
                     <h3>${{totalAmount}}.00</h3>
@@ -26,9 +27,11 @@
 
 <script>
 import Notification from './../modals/Notification'
+import CartModal from './../modals/CartModal'
 export default {
     components: {
-        Notification
+        Notification,
+        CartModal
     },
 
     data() {
