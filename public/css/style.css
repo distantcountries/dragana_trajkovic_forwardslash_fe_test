@@ -1229,7 +1229,11 @@ body {
       left: 76% !important;
       width: 22vw !important;
       position: absolute !important; }
-      @media only screen and (max-width: 1900px) {
+      @media only screen and (min-width: 1921px) {
+        .v--modal-overlay[data-modal="cart-modal"] .v--modal-background-click .v--modal {
+          width: 30vw !important;
+          left: 70% !important; } }
+      @media only screen and (max-width: 1920px) {
         .v--modal-overlay[data-modal="cart-modal"] .v--modal-background-click .v--modal {
           width: 30vw !important;
           left: 70% !important; } }
