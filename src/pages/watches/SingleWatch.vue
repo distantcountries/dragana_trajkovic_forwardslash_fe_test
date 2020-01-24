@@ -155,6 +155,7 @@ export default {
                 if (this.pressedAddButton) {
                     this.$store.commit('decrementTotalItems')
                     this.$store.commit('decreaseTotalAmount', watch)
+                    
                 }
             }
             if(watch.orderQuantity === 0 ) {
@@ -171,6 +172,9 @@ export default {
             this.$store.commit('totalAmountOrderedMutation', watch)
             this.$store.dispatch('automaticallyCloseNotification')
             this.$store.dispatch('anableNotificationAfterAutomaticallyClosed')
+
+            this.$store.commit('pressedAddButtonMutation')
+
         }, 
 
         showMoreDetails(watchId) {

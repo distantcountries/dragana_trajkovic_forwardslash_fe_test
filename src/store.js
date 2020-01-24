@@ -83,6 +83,9 @@ export const store = new Vuex.Store({
         },
         cartNotificationTrueMutation(state) {
             return state.cartNotification = true
+        },
+        pressedAddButtonMutation(state) {
+            return state.pressedAddButton = true
         }
     },
     actions: {
