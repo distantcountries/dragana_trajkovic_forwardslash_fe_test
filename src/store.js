@@ -78,7 +78,9 @@ export const store = new Vuex.Store({
             return state.justAddedItem = watchFromComponent
         },
         cartNotificationFalseMutation(state) {
-            return state.cartNotification = false
+            // return state.cartNotification = false
+            return state.cartNotification = true
+
         },
         cartNotificationTrueMutation(state) {
             return state.cartNotification = true

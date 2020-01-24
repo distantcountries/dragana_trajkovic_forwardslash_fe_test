@@ -13,7 +13,7 @@
                 </div>
                 <div class="product-info">
                     <div class="image">
-                    <img :src="watch.selectedImg"/>
+                        <img :src="watch.selectedImg"/>
                     </div>
                     <div class="title">
                         <h1>{{watch.title}}</h1>

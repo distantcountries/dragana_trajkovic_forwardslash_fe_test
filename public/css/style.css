@@ -136,7 +136,7 @@ body {
   @media only screen and (max-width: 960px) {
     .header-cart {
       width: 25%; } }
-  @media only screen and (max-width: 758px) {
+  @media only screen and (max-width: 768px) {
     .header-cart {
       width: 35%;
       padding-right: 10px; } }
@@ -1401,14 +1401,67 @@ body {
     background-color: transparent !important; }
     .v--modal-overlay[data-modal="notification"] .v--modal-background-click .v--modal {
       top: -45px !important;
-      left: -417px !important;
+      left: 53vw !important;
       height: 390px !important;
-      width: 560px !important;
+      width: 30vw !important;
       box-shadow: none !important;
       border-top: none;
       display: flex;
       justify-content: center;
       align-items: center; }
+      @media only screen and (max-width: 1920px) {
+        .v--modal-overlay[data-modal="notification"] .v--modal-background-click .v--modal {
+          left: 52.5vw !important; } }
+      @media only screen and (max-width: 1750px) {
+        .v--modal-overlay[data-modal="notification"] .v--modal-background-click .v--modal {
+          left: 49vw !important;
+          width: 35vw !important; } }
+      @media only screen and (max-width: 1550px) {
+        .v--modal-overlay[data-modal="notification"] .v--modal-background-click .v--modal {
+          left: 45vw !important;
+          width: 40vw !important; } }
+      @media only screen and (max-width: 1440px) {
+        .v--modal-overlay[data-modal="notification"] .v--modal-background-click .v--modal {
+          left: 39.5vw !important;
+          width: 40vw !important; } }
+      @media only screen and (max-width: 1260px) {
+        .v--modal-overlay[data-modal="notification"] .v--modal-background-click .v--modal {
+          left: 38vw !important;
+          width: 50vw !important; } }
+      @media only screen and (max-width: 1110px) {
+        .v--modal-overlay[data-modal="notification"] .v--modal-background-click .v--modal {
+          left: 31vw !important;
+          width: 60vw !important; } }
+      @media only screen and (max-width: 960px) {
+        .v--modal-overlay[data-modal="notification"] .v--modal-background-click .v--modal {
+          left: 20vw !important;
+          width: 70vw !important; } }
+      @media only screen and (max-width: 860px) {
+        .v--modal-overlay[data-modal="notification"] .v--modal-background-click .v--modal {
+          left: 18vw !important; } }
+      @media only screen and (max-width: 768px) {
+        .v--modal-overlay[data-modal="notification"] .v--modal-background-click .v--modal {
+          left: 0 !important;
+          width: 82vw !important;
+          top: -65px !important; } }
+      @media only screen and (max-width: 680px) {
+        .v--modal-overlay[data-modal="notification"] .v--modal-background-click .v--modal {
+          width: 82vw !important;
+          top: -95px !important; } }
+      @media only screen and (max-width: 580px) {
+        .v--modal-overlay[data-modal="notification"] .v--modal-background-click .v--modal {
+          left: 4vw !important; } }
+      @media only screen and (max-width: 480px) {
+        .v--modal-overlay[data-modal="notification"] .v--modal-background-click .v--modal {
+          left: 2vw !important;
+          top: -25px !important; } }
+      @media only screen and (max-width: 440px) {
+        .v--modal-overlay[data-modal="notification"] .v--modal-background-click .v--modal {
+          left: 7vw !important;
+          width: 95vw !important; } }
+      @media only screen and (max-width: 350px) {
+        .v--modal-overlay[data-modal="notification"] .v--modal-background-click .v--modal {
+          left: 8vw !important; } }
     .v--modal-overlay[data-modal="notification"] .v--modal-background-click .v--modal-box {
       display: flex;
       justify-content: center;
@@ -1426,6 +1479,17 @@ body {
       flex-direction: column;
       position: relative;
       animation: fadeIn ease 1s; }
+      @media only screen and (max-width: 680px) {
+        .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper {
+          height: 120px !important;
+          width: 400px !important; } }
+      @media only screen and (max-width: 580px) {
+        .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper {
+          height: 60px !important;
+          width: 300px !important; } }
+      @media only screen and (max-width: 480px) {
+        .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper {
+          width: 300px !important; } }
 @keyframes fadeIn {
   0% {
     opacity: 0.1; }
@@ -1440,6 +1504,10 @@ body {
         position: relative;
         background-color: transparent;
         padding-bottom: 3px; }
+        @media only screen and (max-width: 480px) {
+          .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .arrow-up {
+            justify-content: flex-start;
+            padding-left: 20px; } }
         .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .arrow-up p {
           font-size: 20pt;
           color: white;
@@ -1452,6 +1520,17 @@ body {
         background-color: transparent;
         box-shadow: 0 2px 20px rgba(169, 131, 107, 0.7), 0 0 10px rgba(169, 131, 107, 0.7);
         position: absolute; }
+        @media only screen and (max-width: 680px) {
+          .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .outer-shadow {
+            height: 146px !important;
+            width: 400px !important; } }
+        @media only screen and (max-width: 580px) {
+          .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .outer-shadow {
+            height: 147px !important;
+            width: 302px !important; } }
+        @media only screen and (max-width: 350px) {
+          .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .outer-shadow {
+            box-shadow: 0 1px 10px rgba(169, 131, 107, 0.7), 0 0 1px rgba(169, 131, 107, 0.7); } }
       .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box {
         flex-direction: column;
         border: 1px solid #ddccb8 !important;
@@ -1462,6 +1541,9 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center; }
+        @media only screen and (max-width: 480px) {
+          .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box {
+            padding-top: 5px; } }
         .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box .close-button {
           width: 92%;
           display: flex;
@@ -1477,32 +1559,79 @@ body {
           justify-content: space-between;
           align-items: flex-start;
           padding-bottom: 25px; }
+          @media only screen and (max-width: 480px) {
+            .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box .product-info {
+              flex-direction: column;
+              justify-content: center;
+              padding-bottom: 5px; } }
           .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box .product-info .image {
             width: 10%;
             display: flex;
             justify-content: flex-start;
             align-items: center; }
+            @media only screen and (max-width: 480px) {
+              .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box .product-info .image {
+                justify-content: center;
+                width: 100%; } }
             .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box .product-info .image img {
               max-width: 100%; }
+              @media only screen and (max-width: 480px) {
+                .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box .product-info .image img {
+                  width: 40px; } }
           .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box .product-info .title {
             width: 55%; }
+            @media only screen and (max-width: 480px) {
+              .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box .product-info .title {
+                width: 100%; } }
             .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box .product-info .title h1 {
               color: #2f4061;
               font-family: 'LatoBold';
               font-size: 14pt;
               text-transform: uppercase;
               letter-spacing: 1px; }
+              @media only screen and (max-width: 680px) {
+                .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box .product-info .title h1 {
+                  font-size: 12pt; } }
+              @media only screen and (max-width: 580px) {
+                .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box .product-info .title h1 {
+                  font-size: 11pt;
+                  letter-spacing: 0; } }
+              @media only screen and (max-width: 480px) {
+                .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box .product-info .title h1 {
+                  text-align: center; } }
             .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box .product-info .title h2 {
               color: #a0765b;
               font-family: 'LatoRegular';
               font-size: 12pt; }
+              @media only screen and (max-width: 680px) {
+                .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box .product-info .title h2 {
+                  font-size: 10pt; } }
+              @media only screen and (max-width: 580px) {
+                .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box .product-info .title h2 {
+                  font-size: 9pt; } }
+              @media only screen and (max-width: 480px) {
+                .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box .product-info .title h2 {
+                  text-align: center; } }
           .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box .product-info .sku {
             width: 30%; }
+            @media only screen and (max-width: 480px) {
+              .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box .product-info .sku {
+                width: 100%; } }
             .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box .product-info .sku h3 {
               color: #2f4061;
               font-family: 'LatoRegular';
               font-size: 10pt;
               text-transform: uppercase; }
+              @media only screen and (max-width: 680px) {
+                .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box .product-info .sku h3 {
+                  font-size: 9pt; } }
+              @media only screen and (max-width: 580px) {
+                .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box .product-info .sku h3 {
+                  font-size: 8pt; } }
+              @media only screen and (max-width: 480px) {
+                .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box .product-info .sku h3 {
+                  text-align: center;
+                  margin-top: 5px; } }
         .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box .message {
           display: flex;
           width: 100%;
@@ -1510,10 +1639,16 @@ body {
           align-items: center;
           border-top: 1px solid #f5f2ee;
           padding: 15px 0; }
+          @media only screen and (max-width: 480px) {
+            .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box .message {
+              padding: 5px 0; } }
           .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box .message p {
             color: #2f4061;
             font-family: 'LatoRegular';
             font-size: 11pt;
             text-align: center; }
+            @media only screen and (max-width: 680px) {
+              .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box .message p {
+                font-size: 10pt; } }
 
 /*# sourceMappingURL=style.css.map */

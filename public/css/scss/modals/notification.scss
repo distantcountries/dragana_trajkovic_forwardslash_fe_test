@@ -18,14 +18,68 @@
         background-color: transparent !important;
         .v--modal {
             top: -45px !important;
-            left: -417px !important;
+            left: 53vw !important;
             height: 390px !important;
-            width: 560px !important;
+            // width: 560px !important;
+            width: 30vw !important;
             box-shadow: none !important;
             border-top: none;
             display: flex;
             justify-content: center;
             align-items: center;
+            @media only screen and (max-width: 1920px) {
+                left: 52.5vw !important;
+            }
+            @media only screen and (max-width: 1750px) {
+                left: 49vw !important;
+                width: 35vw !important;
+            }
+            @media only screen and (max-width: 1550px) {
+                left: 45vw !important;
+                width: 40vw !important;
+            }
+            @media only screen and (max-width: 1440px) {
+                left: 39.5vw !important;
+                width: 40vw !important;
+            }
+            @media only screen and (max-width: 1260px) {
+                left: 38vw !important;
+                width: 50vw !important;
+            }
+            @media only screen and (max-width: 1110px) {
+                left: 31vw !important;
+                width: 60vw !important;
+            }
+            @media only screen and (max-width: 960px) {
+                left: 20vw !important;
+                width: 70vw !important;
+            }
+            @media only screen and (max-width: 860px) {
+                left: 18vw !important;
+            }
+            @media only screen and (max-width: 768px) {
+                left: 0 !important;
+                width: 82vw !important;
+                top: -65px !important;
+            }
+            @media only screen and (max-width: 680px) {
+                width: 82vw !important;
+                top: -95px !important;
+            }
+            @media only screen and (max-width: 580px) {
+                left: 4vw !important;
+            }
+            @media only screen and (max-width: 480px) {
+                left: 2vw !important;
+                top: -25px !important;
+            }
+            @media only screen and (max-width: 440px) {
+                left: 7vw !important;
+                width: 95vw !important;
+            }
+            @media only screen and (max-width: 350px) {
+                left: 8vw !important;
+            }
         }
         .v--modal-box {
             display: flex;
@@ -45,6 +99,18 @@
             flex-direction: column;
             position: relative;
             animation: fadeIn ease 1s;
+            @media only screen and (max-width: 680px) {
+                height: 120px !important;
+                width: 400px !important;
+            }
+            @media only screen and (max-width: 580px) {
+                height: 60px !important;
+                width: 300px !important;
+            }
+            @media only screen and (max-width: 480px) {
+                // height: 90px !important;
+                width: 300px !important;
+            }
             @keyframes fadeIn {
                 0% {
                     opacity:0.1;
@@ -62,6 +128,10 @@
                 position: relative;
                 background-color: transparent;
                 padding-bottom: 3px;
+                @media only screen and (max-width: 480px) {
+                    justify-content: flex-start;
+                    padding-left: 20px;
+                }
                 p {
                     font-size: 20pt;
                     color: white;
@@ -76,6 +146,17 @@
                 background-color: transparent;
                 box-shadow: 0 2px 20px rgba(169, 131, 107, 0.7), 0 0 10px rgba(169, 131, 107, 0.7);
                 position: absolute;
+                @media only screen and (max-width: 680px) {
+                    height: 146px !important;
+                    width: 400px !important;
+                }
+                @media only screen and (max-width: 580px) {
+                    height: 147px !important;
+                    width: 302px !important;
+                }
+                @media only screen and (max-width: 350px) {
+                    box-shadow: 0 1px 10px rgba(169, 131, 107, 0.7), 0 0 1px rgba(169, 131, 107, 0.7);
+                }
             }
             .notification-box {
                 flex-direction: column;
@@ -87,6 +168,9 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                @media only screen and (max-width: 480px) {
+                    padding-top: 5px;
+                }
                 .close-button {
                     width: 92%;
                     display: flex;
@@ -104,37 +188,84 @@
                     justify-content: space-between;
                     align-items: flex-start;
                     padding-bottom: 25px;
+                    @media only screen and (max-width: 480px) {
+                        flex-direction: column;
+                        justify-content: center;
+                        padding-bottom: 5px;
+                    }
                     .image {
                         width: 10%;
                         display: flex;
                         justify-content: flex-start;
                         align-items: center;
+                        @media only screen and (max-width: 480px) {
+                            justify-content: center;
+                            width: 100%;
+                        }
                         img {
                             max-width: 100%;
+                            @media only screen and (max-width: 480px) {
+                                width: 40px;
+                            }
                         }
                     }
                     .title {
                         width: 55%;
+                        @media only screen and (max-width: 480px) {
+                            width: 100%;
+                        }
                         h1 {
                             color: $primaryColor;
                             font-family: 'LatoBold';
                             font-size: 14pt;
                             text-transform: uppercase;
                             letter-spacing: 1px;
+                            @media only screen and (max-width: 680px) {
+                                font-size: 12pt;
+                            }
+                            @media only screen and (max-width: 580px) {
+                                font-size: 11pt;
+                                letter-spacing: 0;
+                            }
+                            @media only screen and (max-width: 480px) {
+                                text-align: center;
+                            }
                         }
                         h2 {
                             color: $secondaryColor;
                             font-family: 'LatoRegular';
                             font-size: 12pt;
+                            @media only screen and (max-width: 680px) {
+                                font-size: 10pt;
+                            }
+                            @media only screen and (max-width: 580px) {
+                                font-size: 9pt;
+                            }
+                            @media only screen and (max-width: 480px) {
+                                text-align: center;
+                            }
                         }
                     }
                     .sku {
                         width: 30%;
+                        @media only screen and (max-width: 480px) {
+                            width: 100%;
+                        }
                         h3 {
                             color: $primaryColor;
                             font-family: 'LatoRegular';
                             font-size: 10pt;
                             text-transform: uppercase;
+                            @media only screen and (max-width: 680px) {
+                                font-size: 9pt;
+                            }
+                            @media only screen and (max-width: 580px) {
+                                font-size: 8pt;
+                            }
+                            @media only screen and (max-width: 480px) {
+                                text-align: center;
+                                margin-top: 5px;
+                            }
                         }
                     }
                 }
@@ -145,11 +276,18 @@
                     align-items: center;
                     border-top: 1px solid #f5f2ee;
                     padding: 15px 0;
+                    @media only screen and (max-width: 480px) {
+                        padding: 5px 0;
+                        // margin-bottom: -30px;
+                    }
                     p {
                         color: $primaryColor;
                         font-family: 'LatoRegular';
                         font-size: 11pt;
                         text-align: center;
+                        @media only screen and (max-width: 680px) {
+                            font-size: 10pt;
+                        }
                     }
                 }
             }
