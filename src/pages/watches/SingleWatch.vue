@@ -19,16 +19,28 @@
                 <h2>{{watch.category}}</h2>
             </div>
             <div class="sku">
+                <div class="labels-mobile-wrapper">
+                    <span class="labels-mobile">Item No: </span>
+                </div>
                 <h3>{{watch.sku}}</h3>
             </div>
             <div class="price">
+                <div class="labels-mobile-wrapper">
+                    <span class="labels-mobile">Listing: </span>
+                </div>
                 <p>${{watch.price}}.00</p>
             </div>
             <div class="sale-price">
+                <div class="labels-mobile-wrapper">
+                    <span class="labels-mobile">Wholesale: </span>
+                </div>
                 <p v-if="watch.salePrice">${{watch.salePrice}}.00</p>
                 <p v-else>${{watch.price}}.00</p>
             </div>
             <div class="quantity">
+                <div class="labels-mobile-wrapper">
+                    <span class="labels-mobile">QTY: </span>
+                </div>
                 <div class="number">
                     <p>{{watch.orderQuantity}}</p>
                 </div>
@@ -85,16 +97,16 @@
             </div>
             <div class="more-details-text">
                 <div class="color segment">
-                    <p>Color: {{watch.color}}</p>
+                    <p><span class="more-details-label">Color: </span>{{watch.color}}</p>
                 </div>
                 <div class="band segment">
-                    <p>Band: {{watch.band}}</p>
+                    <p><span class="more-details-label">Band: </span>{{watch.band}}</p>
                 </div>
                 <div class="material segment">
-                    <p>Case/bezel material: {{watch.material}}</p>
+                    <p><span class="more-details-label">Case/bezel material: </span>{{watch.material}}</p>
                 </div>
                 <div class="features segment">
-                    <p>Features: {{watch.features}}</p>
+                    <p><span class="more-details-label">Features: </span>{{watch.features}}</p>
                 </div>
             </div>
             <div class="fullscreen-button-wrapper segment">
@@ -167,7 +179,17 @@ export default {
 
         handleFullscreen() {
             alert('handleFullscreen')
-        }
+        },
+
+
+
+        // priceApp( num ) {
+        //  var num = 1234567.890123,
+            // result = Number(num.toFixed(0)).toLocaleString().split(/\s/).join(',') + '.' + Number(num.toString().slice(num.toString().indexOf('.')+1)).toLocaleString()
+            //will equal to 1,234,567.890 123
+        // }
+
+        
     }
 }
 </script>

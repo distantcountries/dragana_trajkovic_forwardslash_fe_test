@@ -7,17 +7,32 @@
         width: 73.5%;
         display: flex;
         flex-direction: column;
+        @media only screen and (max-width: 1260px) {
+            width: 90%;
+        }
+        @media only screen and (max-width: 768px) {
+            width: 85%;
+        }
         .labels {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             border-bottom: 1px solid #dbcdc4;
             padding: 48px 0 14px;
+            @media only screen and (max-width: 768px) {
+                display: none;
+            }
             .empty-div {
                 width: 6%;
+                @media only screen and (max-width: 768px) {
+                    width: 2%;
+                }
             }
             .image {
                 width: 6.5%;
+                @media only screen and (max-width: 768px) {
+                    width: 10.5%;
+                }
             }
             .brand {
                 width: 21.8%;
@@ -42,6 +57,9 @@
                     font-family: 'LatoRegular';
                     font-size: 12pt;
                     color: #7583a0;
+                    @media only screen and (max-width: 768px) {
+                        font-size: 10pt;
+                    }
                 }
             }
         }
@@ -56,6 +74,11 @@
         list-style-type: none;
         padding: 0;
         margin: 0;
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
         li {
             padding: 0;
             margin: 0;
@@ -66,6 +89,10 @@
             animation: fadeIn ease 1s;
             padding-top: 2px;
             margin-bottom: -13px;
+            @media only screen and (max-width: 768px) {
+                border: none;
+                box-shadow: none;
+            }
             @keyframes fadeIn {
                 0% {
                     opacity:0.1;
@@ -77,6 +104,23 @@
         }
         .watch {
             border: none;
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 1260px) {
+    .all-watches-wrapper {
+        .all-watches {
+            .labels {
+                .segment {
+                    p {
+                        font-size: 10pt;
+                    }
+
+                }
+            }
         }
     }
 }

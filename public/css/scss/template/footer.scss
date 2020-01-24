@@ -4,12 +4,24 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    @media only screen and (max-width: 1260px) {
+        margin-top: 100px;
+    }
+    @media only screen and (max-width: 768px) {
+        margin-top: 50px;
+    }
     .footer {
         width: 85%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         color: $primaryColor;
+        @media only screen and (max-width: 1260px) {
+            width: 90%;
+        }
+        @media only screen and (max-width: 768px) {
+            width: 95%;
+        }
     }
 }
 
@@ -18,10 +30,21 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 35px;
+    }
     .border {
         height: 12px;
         width: 208px;
         background-color: #ddccb8;
+        @media only screen and (max-width: 1260px) {
+            width: 150px;
+            height: 9px;
+        }
+        @media only screen and (max-width: 768px) {
+            width: 120px;
+            height: 7px;
+        }
     }
 }
 
@@ -32,16 +55,35 @@
     align-items: flex-start;
     padding-top: 50px;
     height: 100%;
+    flex-wrap: wrap;
+    @media only screen and (max-width: 1260px) {
+        padding-top: 10px;
+    }
     .section {
-        width: 35%;
+        width: 33%;
         display: flex;
         flex-direction: column;
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
         h1 {
             font-size: 21pt;
             font-family: 'ButlerBold';
             text-transform: uppercase;
             letter-spacing: 10px;
             text-align: center;
+            margin-bottom: 44px;
+            @media only screen and (max-width: 1260px) {
+                font-size: 17pt;
+                letter-spacing: 7px;
+            }
+            @media only screen and (max-width: 768px) {
+                font-size: 18pt;
+                letter-spacing: 5px;
+                margin-bottom: 30px;
+            }
         }
         a {
             text-decoration: none;
@@ -56,6 +98,14 @@
                 text-transform: uppercase;
                 letter-spacing: 4px;
                 text-align: center;
+                margin-bottom: 20px;
+                @media only screen and (max-width: 1260px) {
+                    font-size: 11pt;
+                    letter-spacing: 2px;
+                }
+                @media only screen and (max-width: 768px) {
+                    margin-bottom: 13px;
+                }
                 span {
                     color: $secondaryColor;
                     &:hover {
@@ -69,6 +119,12 @@
             font-family: 'OpenSansRegular';
             letter-spacing: 1px;
             text-align: center;
+            margin-bottom: 12px;
+            @media only screen and (max-width: 1260px) {
+                font-size: 10pt;
+                letter-spacing: 0;
+                margin-bottom: 5px;
+            }
         }
         span {
             color: $secondaryColor;
@@ -78,41 +134,57 @@
         }
     }
     .section-links {
-        justify-content: flex-start;
-        h1 {
-            margin-bottom: 44px;
-        }
-        h2 {
-            margin-bottom: 20px;
-        }
-        p {
-            margin-bottom: 12px;
+        @media only screen and (max-width: 768px) {
+            width: 100%;
         }
     }
+
     .section-adress {
         justify-content: center;
         h1 {
             margin-bottom: 26px;
+            @media only screen and (max-width: 768px) {
+                margin-bottom: 20px;
+            }
         }
         .adress {
             margin-top: 34px;
             line-height: 28px;
             letter-spacing: 0;
+            @media only screen and (max-width: 1260px) {
+                margin-top: 16px;
+            }
+            @media only screen and (max-width: 768px) {
+                margin-top: 8px;
+            }
         }
     }
     .section-newsletter-wrapper1 {
         justify-content: center;
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
         .section-newsletter-wrapper2 {
             width: 100%;
             display: flex;
             justify-content: flex-end;
+            @media only screen and (max-width: 768px) {
+                justify-content: flex-start;
+            }
+
             .section-newsletter {
                 width: 92%;
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
+                @media only screen and (max-width: 768px) {
+                    width: 100%;
+                }
                 h1 {
                     padding-left: 15px;
+                    @media only screen and (max-width: 768px) {
+                        padding-left: 0;
+                    }
                 }
                 .section-button-wrapper {
                     padding-left: 15px;
@@ -120,13 +192,22 @@
                     display: flex;
                     justify-content: center;
                     margin-top: 115px;
+                    @media only screen and (max-width: 768px) {
+                        margin-top: 30px;
+                    }
                     .section-button {
                         border: 1px solid #d7d7d7;
-                        width: 70%;
+                        width: 80%;
                         padding: 28px 20px;
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
+                        @media only screen and (max-width: 1260px) {
+                            padding: 20px 18px;
+                        }
+                        @media only screen and (max-width: 768px) {
+                            padding: 15px 10px;
+                        }
                         .segment {
                             display: flex;
                             align-items: center;
@@ -136,7 +217,9 @@
                             width: 20%;
                             display: flex;
                             align-items: flex-end;
-                            
+                            @media only screen and (max-width: 768px) {
+                                width: 100%;
+                            }
                             img {
                                 max-width: 100%;
                                 max-height: 100%;
@@ -155,16 +238,34 @@
                         }
                         .icon-letter {
                             justify-content: flex-start;
+                            @media only screen and (max-width: 768px) {
+                                justify-content: center;
+                            }
                         }
                         .icon-arrow {
                             justify-content: flex-end;
+                            @media only screen and (max-width: 768px) {
+                                justify-content: center;
+                            }
                         }
                         .text {
                             width: 55%;
+                            @media only screen and (max-width: 768px) {
+                                width: 100%;
+                                justify-content: center;
+                                margin: 5px 0;
+                            }
                             p {
                                 text-transform: uppercase;
                                 font-size: 9pt;
                                 letter-spacing: 2px;
+                                @media only screen and (max-width: 1260px) {
+                                    font-size: 7.5pt;
+                                }
+                                @media only screen and (max-width: 768px) {
+                                    letter-spacing: 2px;
+                                    font-size: 8.5pt;
+                                }
                             }
                         }
                     }
@@ -176,6 +277,13 @@
         margin: 20px 0;
         border-left: 1px solid #ddccb8;
         height: 100%;
+        @media only screen and (max-width: 768px) {
+            display: flex;
+            margin-left: 20%;
+            height: 0;
+            width: 60%;
+            border-bottom: 1px solid #ddccb8;
+        }
     }
 }
 
@@ -183,40 +291,19 @@
     width: 100%;
     padding-top: 125px;
     padding-bottom: 100px;
+    @media only screen and (max-width: 1260px) {
+        padding-bottom: 50px;
+        padding-top: 80px;
+    }
+    @media only screen and (max-width: 768px) {
+        padding: 65px 0 45px;
+    }
     p {
         text-align: center;
         font-family: 'OpenSansRegular';
         font-size: 12pt;
-    }
-}
-
-@media only screen and (max-width: 960px) {
-    .footer-wrapper {
-        margin-top: 30px;
-        .footer {
-            width: 95%;
-            .footer-sections {
-                padding-top: 10px;
-            }
-        }
-    }
-} 
-
-@media only screen and (max-width: 960px) {
-    .footer-sections {
-        padding-top: 10px;
-        h1 {
-            font-size: 16pt;
-            letter-spacing: 5px;
-        }
-        a {
-            h2 {
-                font-size: 10pt;
-                letter-spacing: 1px;
-            }
-        }
-        p {
+        @media only screen and (max-width: 1260px) {
             font-size: 9pt;
         }
     }
-} 
+}

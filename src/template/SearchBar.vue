@@ -22,6 +22,7 @@ export default {
     methods: {
         handleSearch(term) {
             this.$store.commit('searchTermMutation', term)
+            this.term = ''
         }, 
     }
 }

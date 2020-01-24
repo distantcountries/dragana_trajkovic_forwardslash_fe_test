@@ -4,6 +4,11 @@
     display: flex;
     justify-content: center;
     background-color: white;
+    @media only screen and (max-width: 768px) {
+        height: 55px;
+    }
+    @media only screen and (max-width: 480px) {}
+
     .header {
         width: 73.5%;
         display: flex;
@@ -11,6 +16,12 @@
         align-items: center;
         color: $primaryColor;
         flex-wrap: wrap;
+        @media only screen and (max-width: 1260px) {
+            width: 85%;
+        }
+        @media only screen and (max-width: 768px) {
+            width: 85%;
+        }
     }
 }
 
@@ -21,12 +32,27 @@
     flex-direction: column;
     justify-content: center;
     width: 15.2%;
+    @media only screen and (max-width: 1260px) {
+        width: 20%;
+    }
+    @media only screen and (max-width: 960px) {
+        width: 25%;
+    }
+    @media only screen and (max-width: 480px) {
+    }
     h1 {
         font-size: 18pt;
         letter-spacing: 11px;
         font-family: 'ButlerBlack';
         text-transform: uppercase;
         line-height: 18pt;
+        @media only screen and (max-width: 1424px) {
+            letter-spacing: 8px;
+        }
+        @media only screen and (max-width: 768px) {
+            font-size: 14pt;
+            letter-spacing: 4px;
+        }
     }
     h2 {
         text-transform: uppercase;
@@ -34,6 +60,13 @@
         font-size: 8pt;
         letter-spacing: 5.5px;
         margin-top: 5px;
+        @media only screen and (max-width: 1424px) {
+            letter-spacing: 4.2px;
+        }
+        @media only screen and (max-width: 768px) {
+            font-size: 7pt;
+            letter-spacing: 2px;
+        }
     }
 }
 
@@ -46,6 +79,12 @@
     border-right: 1px solid #e6e6e6;
     width: 15.2%;
     position: relative;
+    @media only screen and (max-width: 1260px) {
+        width: 20%;
+    }
+    @media only screen and (max-width: 960px) {
+        width: 25%;
+    }
     .cart {
         height: 100%;
         width: 45%;
@@ -79,6 +118,9 @@
             top: 15px;
             left: 41px;
             z-index: 10; 
+            @media only screen and (max-width: 1260px) {
+                left: 23px;
+            }
             p {
                 color: white;
                 font-size: 9pt;
@@ -90,6 +132,9 @@
         width: 55%;
         display: flex;
         flex-direction: column;
+        @media only screen and (max-width: 1260px) {
+            justify-content: flex-end;
+        }
         p { 
             font-family: 'LatoBold';
             font-size: 8pt;
@@ -101,34 +146,10 @@
             font-size: 14pt;
             color: $secondaryColor;
             margin-top: 4px;
+            @media only screen and (max-width: 1260px) {
+                font-size: 11pt;
+            }
         }
     }
 }
 
-@media only screen and (max-width: 1260px) {
-    .header {
-        width: 85%;
-    }
-    .header-logo {
-        width: 25%;
-    }
-    .header-cart {
-        width: 25%;
-    }
-} 
-@media only screen and (max-width: 960px) {
-    .header-logo {
-        width: 36%;
-    }
-    .header-cart {
-        width: 35%;
-    }
-} 
-// @media only screen and (max-width: 480px) {
-//     .header-logo {
-//         width: 90%;
-//     }
-//     .header {
-//         flex-direction: column;
-//     }
-// } 

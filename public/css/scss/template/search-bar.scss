@@ -6,11 +6,20 @@
     align-items: center;
     background-color: #f5f2ee;
     box-shadow: inset 0 10px 20px -7px rgba(221,204, 184, 0.8);
+    @media only screen and (max-width: 768px) {
+        height: 70px;
+    }
     .search-bar {
         width: 73.5%;
         display: flex;
         justify-content: center;
         align-items: center;
+        @media only screen and (max-width: 1260px) {
+            width: 85%;
+        }
+        @media only screen and (max-width: 768px) {
+            width: 85%;
+        }
         form {
             width: 100%;
             display: flex;
@@ -24,11 +33,17 @@
                 border: 1px solid #d8c5b0;
                 background: url('./../../../img/icons/search.png') no-repeat 20px 50%;
                 background-color: white;
+                @media only screen and (max-width: 768px) {
+                    height: 28px;
+                }
                 &::placeholder {
                     color: #d8c5b0;
                     font-family: 'LatoRegular';
                     font-size: 12pt;
                     padding-left: 8px;
+                    @media only screen and (max-width: 768px) {
+                        font-size: 9pt;
+                    }
                 }
                 &:focus {
                     outline: none;

@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: column;
     padding-top: 10px;
+    @media only screen and (max-width: 768px) {
+        border-bottom: 3px double #7583a0;
+    }
 }
 
 .visible-details {
@@ -13,6 +16,10 @@
     height: 60px;
     padding-top: 5px;
     margin: 8px 0;
+    @media only screen and (max-width: 768px) {
+        flex-wrap: wrap;
+        height: auto;
+    }
     h1 {
         font-family: 'LatoBold';
         font-size: 14pt;
@@ -20,12 +27,25 @@
         text-transform: uppercase;
         margin-top: -6px;
         letter-spacing: 1px;
+        @media only screen and (max-width: 1260px) {
+            font-size: 13pt;
+        }
+        @media only screen and (max-width: 768px) {
+            font-size: 14pt;
+        }
+
     }
     h2 {
         font-family: 'LatoRegular';
         font-size: 12pt;
         color: $secondaryColor;
-        text-transform:capitalize
+        text-transform:capitalize;
+        @media only screen and (max-width: 1260px) {
+            font-size: 9pt;
+        }
+        @media only screen and (max-width: 768px) {
+            font-size: 12pt;
+        }
     }
     h3 {
         font-family: 'LatoRegular';
@@ -33,18 +53,40 @@
         letter-spacing: 1px;
         color: $primaryColor;
         text-transform: uppercase;
+        @media only screen and (max-width: 1260px) {
+            font-size:9pt;
+            letter-spacing: 0;
+        }
+        @media only screen and (max-width: 768px) {
+            font-size: 10pt;
+            display: inline;
+        }
+
     } 
     p {
         font-family: 'LatoRegular';
         font-size: 10pt;
         color: $secondaryColor;
         letter-spacing: 1px;
+        @media only screen and (max-width: 1260px) {
+            font-size: 9pt;
+            letter-spacing: 0;
+        }
+        @media only screen and (max-width: 768px) {
+            font-size: 10pt;
+            display: inline;
+        }
+
     }
     .star {
         width: 6%;
         display: flex;
         justify-content: center;
         align-items: center;
+        @media only screen and (max-width: 768px) {
+            width: 10%;
+            justify-content: flex-start;
+        }
         .star-button {
             img {
                 max-width: 100%;
@@ -61,6 +103,9 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        @media only screen and (max-width: 768px) {
+            width: 25%;
+        }
         .image {
             width: 100%;
             display: flex;
@@ -74,31 +119,78 @@
     }
     .title {
         width: 21.8%;
+        @media only screen and (max-width: 768px) {
+            width: 55%;
+        }
     }
     .sku {
         width: 17.5%;
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 8px;
+            h3 {
+                width: 49%;
+            }
+        }
     }
     .price {
         width: 12.5%;
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 8px;
+            p {
+                width: 49%; 
+            }
+        }
     }
     .sale-price {
         width: 13.5%;
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 8px;
+            p {
+                width: 49%; 
+            }
+        }
     }
     .quantity {
         width: 7.8%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            margin-top: 8px;
+        }
         .number {
             width: 15%;
+            @media only screen and (max-width: 768px) {
+                width: 20px;
+            }
         }
         .icons {
             widows: 70%;
             display: flex;
             flex-direction: column;
+            @media only screen and (max-width: 768px) {
+                width: 35px;
+                justify-content: flex-start;
+            }
             button {
                 border: none;
                 background: none;
+                @media only screen and (max-width: 768px) {
+                    height: 20px;
+                }
                 img {
                     max-width: 100%;
                 }
@@ -119,6 +211,11 @@
         justify-content: flex-start;
         flex-direction: column;
         align-items: flex-start;
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            justify-content: center;
+            margin-top: 10px;
+        }
         .exclamation {
             width: 100%;
             display: flex;
@@ -126,11 +223,27 @@
             align-items: center;
             margin-top: -21px;
             margin-bottom: 4px;
+            @media only screen and (max-width: 768px) {
+                margin-top: 10px;
+                justify-content: flex-start;
+            }
             .icon {
                 display: flex;
                 justify-content: flex-end;
                 width: 28%;
                 margin-right: 5px;
+                @media only screen and (max-width: 1550px) {
+                    width: 17%;
+                }
+                @media only screen and (max-width: 1260px) {
+                    justify-content: flex-start;
+                    width: 17%;
+                    margin-right: 2px;
+                }
+                @media only screen and (max-width: 768px) {
+                    width: 10%;
+                    justify-content: flex-start;
+                }
                 img {
                     max-width: 100%;
                 }
@@ -139,11 +252,30 @@
                 display: flex;
                 justify-content: flex-start;
                 width: 70%;
+                @media only screen and (max-width: 1550px) {
+                    width: 83%;
+                }
+                @media only screen and (max-width: 1260px) {
+                    width: 83%;
+                }
+                @media only screen and (max-width: 768px) {
+                    width: 50%;
+                    justify-content: flex-start;
+                }
                 p {
                     font-family: 'LatoRegular';
                     font-size: 10pt;
                     color: #d47614;
                     letter-spacing: -1px;
+                    @media only screen and (max-width: 1550px) {
+                        font-size: 10pt;
+                    }
+                    @media only screen and (max-width: 1260px) {
+                        font-size: 8.4pt;
+                    }
+                    @media only screen and (max-width: 768px) {
+                        font-size: 10pt;
+                    }
                 }
             }
         }
@@ -153,6 +285,12 @@
             justify-content: center;
             align-items: center;
             padding: 15px 0;
+            @media only screen and (max-width: 1260px) {
+                padding: 10px 3px;
+            }
+            @media only screen and (max-width: 768px) {
+                width: 30%;
+            }
             img {
                 max-width: 100%;
             }
@@ -161,12 +299,19 @@
                 font-size: 12pt;
                 text-transform: uppercase;
                 letter-spacing: 4px;
+                @media only screen and (max-width: 1260px) {
+                    font-size: 9pt;
+                    letter-spacing: 1px;
+                }
             }
             h5 {
                 font-family: 'LatoRegular';
                 font-size: 9pt;
                 text-transform: uppercase;
                 color: #2f4061;
+                @media only screen and (max-width: 1260px) {
+                    font-size: 6pt;
+                }
             }
         }
         .add {
@@ -174,6 +319,9 @@
             color: white;
             img {
                 padding-left: 10px;
+                @media only screen and (max-width: 1260px) {
+                    padding-left: 3px;
+                }
             }
             &:hover {
                 cursor: pointer;
@@ -185,13 +333,50 @@
             color: white; 
             img {
                 padding-left: 12px;
+                @media only screen and (max-width: 1260px) {
+                    padding-left: 3px;
+                }
             }
         }
         .unabled {
             background-color: white;
             color: $primaryColor;
+            @media only screen and (max-width: 1550px) {
+                justify-content: space-between;
+            }
+            @media only screen and (max-width: 768px) {
+                justify-content: flex-start;
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+            h5 {
+                font-family: 'LatoRegular';
+                font-size: 9pt;
+                text-transform: uppercase;
+                color: #2f4061;
+                @media only screen and (max-width: 1550px) {
+                    font-size: 7pt;
+                }
+                @media only screen and (max-width: 1260px) {
+                    font-size: 5pt;
+                }
+                @media only screen and (max-width: 768px) {
+                    width: 50%;
+                    font-size: 7pt;
+                }
+            }
             img {
                 margin-right: 5px;
+                @media only screen and (max-width: 1550px) {
+                    margin-right: 3px;
+                }
+                @media only screen and (max-width: 1260px) {
+                    margin-right: 2px;
+                }
+                @media only screen and (max-width: 768px) {
+                    width: 10%;
+                    margin-right: 10px;
+                }
             }
         }
     }
@@ -200,14 +385,23 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            justify-content: flex-end;
+        }
         .show-more-button {
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
+
             img {
                 max-width: 100%;
                 padding-left: 10px;
+                @media only screen and (max-width: 768px) {
+                    padding-left: 0;
+                }
             }
             &:hover {
                 cursor: pointer;
@@ -230,6 +424,17 @@
             z-index: 1000;
             font-family: 'LatoBold';
             font-size: 8pt;
+            @media only screen and (max-width: 1260px) {
+                width: 70px;
+                padding: 2px;
+                margin-left: 45px; 
+                margin-top: -12px;
+                font-size: 6pt;
+                text-align: center;
+            }
+            @media only screen and (max-width: 768px) {
+                visibility: hidden;
+            }
         }
     }
 }
@@ -243,6 +448,7 @@
     margin-top: 14px;
     padding: 14px 0 18px;
     animation: fadeIn ease 1s;
+    flex-wrap: wrap;
     @keyframes fadeIn {
         0% {
             opacity:0.1;
@@ -253,30 +459,54 @@
     }
     .empty-div {
         width: 6%;
+        @media only screen and (max-width: 768px) {
+            display: none;
+        }
     }
     .segment {
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
     }
     .gallery-images-wrapper1 {
         width: 15%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
         .gallery-images-wrapper2 {
             width: 80%;
             display: flex;
             justify-content: flex-end;
             align-items: center;
+            @media only screen and (max-width: 768px) {
+                width: 50%;
+            }
             .gallery-images {
                 width: 80%;
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
+                @media only screen and (max-width: 1260px) {
+                    width: 100%;
+                }
                 img {
                     width: 50%;
                     opacity: 0.4;
+                    @media only screen and (max-width: 1260px) {
+                        width: 80%;
+                    }
+                    @media only screen and (max-width: 768px) {
+                        width: 70%;
+                        margin-bottom: 8px;
+                    }
                     &:hover {
                         opacity: 1;
                         cursor: pointer;
@@ -290,10 +520,24 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
         p {
             font-family: 'LatoRegular';
             font-size: 10pt;
             color: #7583a0;
+            @media only screen and (max-width: 1260px) {
+                font-size: 8pt;
+            }
+            @media only screen and (max-width: 768px) {
+                display: inline;
+                font-family: 'LatoRegular';
+                font-size: 11pt;
+                color: $secondaryColor;
+                margin-right: 10px;
+            }
         }
     }
     .fullscreen-button-wrapper {
@@ -301,6 +545,9 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
         .fullscreen-button {
             width: 4%;
             display: flex;
@@ -325,7 +572,44 @@
             position: absolute;
             z-index: 1000;
             font-family: 'LatoBold';
-            font-size: 8pt;
+            font-size: 8pt;   
+            @media only screen and (max-width: 1260px) {
+                padding: 2px;
+                margin-left: 29px; 
+                margin-top: -10px;
+                font-size: 6pt; 
+            }
+            @media only screen and (max-width: 768px) {
+                visibility: hidden;
+            }
         }
+    }
+}
+
+.labels-mobile-wrapper {
+    @media only screen and (max-width: 768px) {
+        display: flex;
+        justify-content: flex-end;
+        width: 49%;
+    }
+}
+.labels-mobile {
+    display: none;
+    @media only screen and (max-width: 768px) {
+        display: inline;
+        font-family: 'LatoRegular';
+        font-size: 11pt;
+        color: #7583a0;
+        margin-right: 10px;
+    }
+}
+
+.more-details-label {
+    @media only screen and (max-width: 768px) {
+        display: inline;
+        font-family: 'LatoRegular';
+        font-size: 11pt;
+        color: #7583a0;
+        margin-right: 10px;
     }
 }

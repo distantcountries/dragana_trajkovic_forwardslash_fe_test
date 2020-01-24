@@ -109,7 +109,7 @@ export default {
       if(watch.orderQuantity === 0 ) {
         this.$store.commit('removeWatchFromCartMutation', watch)
       }
-    }, 
+    }
   }
 }
 </script>
