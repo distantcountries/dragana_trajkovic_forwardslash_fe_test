@@ -1306,6 +1306,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center; }
+    .cart-modal-content .products .empty-cart-message {
+      font-family: 'LatoRegular';
+      font-size: 14pt;
+      color: #a0765b;
+      text-align: center;
+      margin-bottom: 20px; }
+      @media only screen and (max-width: 480px) {
+        .cart-modal-content .products .empty-cart-message {
+          font-size: 12pt; } }
     .cart-modal-content .products .cart-single-product-wrapper {
       width: 100%;
       display: flex;

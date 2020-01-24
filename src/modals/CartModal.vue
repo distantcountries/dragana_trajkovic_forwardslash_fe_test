@@ -14,6 +14,7 @@
           </div>
         </div>
         <div class="products">
+          <p class="empty-cart-message" v-if="cart.length === 0">Your cart is empty</p>
           <div class="cart-single-product-wrapper" v-for="(watch, index) in watchesInCart" :key="index">
             <div class="cart-single-product">
               <div class="close-button">
