@@ -29,7 +29,6 @@
                 top: 0 !important;
                 left:0 !important;
             }
-
         }
         .v--modal-box {
             background-color: white;
@@ -46,22 +45,29 @@
 .cart-modal-content {
     width: 100%;
     flex-direction: column;
-    .header-wrapper {
+    display: flex;
+    justify-content: center;
+    .cart-modal-header-wrapper {
+        display: flex;
+        justify-content: center;
         width: 100%;
         border-bottom: 1px solid #ddccb8;
         margin-bottom: 58px;
-        .header {
+        @media only screen and (max-width: 480px) {
+            margin-bottom: 30px;
+        }
+        .cart-modal-header {
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            width: 95%;
-            @media only screen and (max-width: 1260px) {
-                width: 85%;
-            }
+            width: 85%;
             @media only screen and (max-width: 768px) {
                 justify-content: space-between;
                 align-items: center;
                 width: 90%;
+            }
+            @media only screen and (max-width: 480px) {
+                width: 80;
             }
             .cart-modal-close-button {
                 display: none;
@@ -78,6 +84,8 @@
                 font-family: 'LatoBold';
                 font-size: 14pt;
                 color: $primaryColor;
+                line-height: 18pt;
+                margin: 20px 0;
             }
         }
     }
@@ -93,18 +101,14 @@
             margin-bottom: 20px;
             .cart-single-product {
                 display: flex;
-                justify-content: flex-start;
+                justify-content: space-between;
                 align-items: center;
-                width: 95%;
-                @media only screen and (max-width: 1260px) {
-                    justify-content: space-between;
-                    width: 85%;
-                }
+                width: 85%;
                 @media only screen and (max-width: 768px) {
                     width: 90%;
                 }
                 .close-button {
-                    width: 12%;
+                    width: 8%;
                     button {
                         border: none;
                         background: none;
@@ -119,7 +123,7 @@
                     }
                 }
                 .title {
-                    width: 42%;
+                    width: 41%;
                     h2 {
                         font-family: 'LatoBold';
                         font-size: 12pt;
@@ -133,7 +137,7 @@
                     }
                 }
                 .price {
-                    width: 24%;
+                    width: 25%;
                     p {
                         font-family: 'LatoBold';
                         color: $secondaryColor;

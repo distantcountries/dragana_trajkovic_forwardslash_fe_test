@@ -7,8 +7,9 @@
     @media only screen and (max-width: 768px) {
         height: 55px;
     }
-    @media only screen and (max-width: 480px) {}
-
+    @media only screen and (max-width: 480px) {
+        height: 156px;
+    }
     .header {
         width: 73.5%;
         display: flex;
@@ -21,6 +22,9 @@
         }
         @media only screen and (max-width: 768px) {
             width: 85%;
+        }
+        @media only screen and (max-width: 480px) {
+            justify-content: center;
         }
     }
 }
@@ -42,6 +46,11 @@
         width: 30%;
     }
     @media only screen and (max-width: 480px) {
+        width: 100%;
+        border: none;
+        height: 39px;
+        border-bottom: 1px solid #e6e6e6;
+        padding-bottom: 20px;
     }
     h1 {
         font-size: 18pt;
@@ -55,6 +64,11 @@
         @media only screen and (max-width: 768px) {
             font-size: 14pt;
             letter-spacing: 4px;
+        }
+        @media only screen and (max-width: 480px) {
+            font-size: 18pt;
+            letter-spacing: 11px;
+            text-align: center;
         }
     }
     h2 {
@@ -70,6 +84,11 @@
             font-size: 7pt;
             letter-spacing: 2px;
         }
+        @media only screen and (max-width: 480px) {
+            font-size: 8pt;
+            letter-spacing: 5.5px;
+            text-align: center;
+        }
     }
 }
 
@@ -81,7 +100,7 @@
     border-left: 1px solid #e6e6e6;
     border-right: 1px solid #e6e6e6;
     width: 15.2%;
-    position: relative;
+    // position: relative;
     @media only screen and (max-width: 1440px) {
         width: 22%;
     }
@@ -95,12 +114,26 @@
         width: 35%;
         padding-right: 10px;
     }
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+        border: none;
+        height: 39px;
+        margin: 0;
+        padding: 0;
+    }
     .cart {
         height: 100%;
-        width: 45%;
+        // width: 45%;
+        padding-left: 23px;
+        width: 50px;
         display: flex;
         justify-content: center;
+        // justify-content: flex-end;
         align-items: center;
+        position: relative;
+        @media only screen and (max-width: 480px) {
+            justify-content: flex-end;
+        }
         &:hover {
             cursor: pointer;
             transform: scale(1.1);
@@ -128,8 +161,17 @@
             top: 15px;
             left: 41px;
             z-index: 10; 
-            @media only screen and (max-width: 1260px) {
-                left: 23px;
+            @media only screen and (min-width: 769px) {
+                top: 16px;
+                left: 38px;
+            }
+            @media only screen and (max-width: 768px) {
+                top: 6px;
+                left: 38px;
+            }
+            @media only screen and (max-width: 480px) {
+                top: -3px;
+                left: 48px;
             }
             p {
                 color: white;

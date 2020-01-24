@@ -7,8 +7,8 @@
       height="auto"
     >
       <div class="cart-modal-content">
-        <div class="header-wrapper">
-          <div class="header">
+        <div class="cart-modal-header-wrapper">
+          <div class="cart-modal-header">
             <h1>My Cart</h1>
             <img src="img/icons/close.png" class="cart-modal-close-button" @click="handleClose"/>
           </div>
