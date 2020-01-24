@@ -28,14 +28,14 @@
                 <div class="labels-mobile-wrapper">
                     <span class="labels-mobile">Listing: </span>
                 </div>
-                <p>${{watch.price}}.00</p>
+                <p>${{showPrice(watch.price)}}</p>
             </div>
             <div class="sale-price">
                 <div class="labels-mobile-wrapper">
                     <span class="labels-mobile">Wholesale: </span>
                 </div>
-                <p v-if="watch.salePrice">${{watch.salePrice}}.00</p>
-                <p v-else>${{watch.price}}.00</p>
+                <p v-if="watch.salePrice">${{showPrice(watch.salePrice)}}</p>
+                <p v-else>${{showPrice(watch.price)}}</p>
             </div>
             <div class="quantity">
                 <div class="labels-mobile-wrapper">
@@ -136,7 +136,6 @@ export default {
         handleStar(watchId) {
             watchesService.addStar(watchId)
         }, 
-
         handleIncrement(watch) {
             if(watch.orderQuantity < watch.quantity) {
                 watchesService.increment(watch)
@@ -148,7 +147,6 @@ export default {
                 alert('We have only ' +  watch.orderQuantity + ' products in stock')
             }
         },
-
         handleDecrement(watch) {
             if(watch.orderQuantity > 0) {
                 watchesService.decrement(watch)
@@ -163,7 +161,6 @@ export default {
                 this.$store.commit('notPressedAddButtonMutation')
             }
         }, 
-
         handleAdd(watch) {
             watchesService.addWatch(watch)
             this.$modal.show('notification')
@@ -174,32 +171,22 @@ export default {
             this.$store.dispatch('automaticallyCloseNotification')
             this.$store.dispatch('anableNotificationAfterAutomaticallyClosed')
         }, 
-
         showMoreDetails(watchId) {
             watchesService.showMoreDetails(watchId)
         },
-
         hideMoreDetails(watchId) {
             watchesService.hideMoreDetails(watchId)
         },
-
         handleImage(image, watchId) {
             watchesService.showImage(image, watchId)
         },
-
         handleFullscreen() {
             alert('handleFullscreen')
         },
-
-
-
-        // priceApp( num ) {
-        //  var num = 1234567.890123,
-            // result = Number(num.toFixed(0)).toLocaleString().split(/\s/).join(',') + '.' + Number(num.toString().slice(num.toString().indexOf('.')+1)).toLocaleString()
-            //will equal to 1,234,567.890 123
-        // }
-
-        
+        showPrice(num) {
+            let result = Number(num.toFixed(0)).toLocaleString().split(/\s/).join(',') + '.' + '00'
+            return result
+        }
     }
 }
 </script>

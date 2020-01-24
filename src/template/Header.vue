@@ -18,7 +18,7 @@
                 <CartModal />
                 <div class="total-amount">
                     <p>Total:</p>
-                    <h3>${{totalAmount}}.00</h3>
+                    <h3>${{showPrice(totalAmount)}}</h3>
                 </div>
             </div>
         </div>
@@ -55,6 +55,10 @@ export default {
         },
         hide () {
             this.$modal.hide('cart-modal');
+        },
+        showPrice(num) {
+            let result = Number(num.toFixed(0)).toLocaleString().split(/\s/).join(',') + '.' + '00'
+            return result
         }
     }
 }

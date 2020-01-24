@@ -28,7 +28,7 @@
                 </h3>
               </div>
               <div class="price">
-                <p>${{watch.totalAmountOrdered}}.00</p>
+                <p>${{showPrice(watch.totalAmountOrdered)}}</p>
               </div>
               <div class="quantity">
                 <div class="number">
@@ -46,7 +46,7 @@
           <div class="footer">
             <div class="total-amount">
               <h4>Total:</h4>
-              <h5>${{totalAmount}}.00</h5>
+              <h5>${{showPrice(totalAmount)}}</h5>
             </div>
             <div class="checkout-button" @click="handleCheckout">
               <h6>Checkout</h6>
@@ -101,7 +101,6 @@ export default {
         alert('We have only ' +  watch.orderQuantity + ' products in stock')
       }
     },
-
     handleDecrement(watch) {
       if(watch.orderQuantity > 0) {
         watchesService.decrement(watch)
@@ -111,6 +110,10 @@ export default {
       if(watch.orderQuantity === 0 ) {
         this.$store.commit('removeWatchFromCartMutation', watch)
       }
+    },
+    showPrice(num) {
+      let result = Number(num.toFixed(0)).toLocaleString().split(/\s/).join(',') + '.' + '00'
+      return result
     }
   }
 }
