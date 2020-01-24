@@ -13,8 +13,7 @@ export const store = new Vuex.Store({
         totalAmount: 0, 
         totalItems: 0, 
         justAddedItem: 0,
-        cartNotification: true,
-        pressedAddButton: false
+        cartNotification: true
     }, 
     getters: {
         fillteredWatchesStore(state) {
@@ -83,9 +82,6 @@ export const store = new Vuex.Store({
         },
         cartNotificationTrueMutation(state) {
             return state.cartNotification = true
-        },
-        pressedAddButtonMutation(state) {
-            return state.pressedAddButton = true
         }
     },
     actions: {

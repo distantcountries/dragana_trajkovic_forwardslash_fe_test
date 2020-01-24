@@ -152,7 +152,7 @@ export default {
         handleDecrement(watch) {
             if(watch.orderQuantity > 0) {
                 watchesService.decrement(watch)
-                if (this.pressedAddButton) {
+                if (watch.addToCart) {
                     this.$store.commit('decrementTotalItems')
                     this.$store.commit('decreaseTotalAmount', watch)
                     
@@ -160,6 +160,7 @@ export default {
             }
             if(watch.orderQuantity === 0 ) {
                 this.$store.commit('removeWatchFromCartMutation', watch)
+                this.$store.commit('notPressedAddButtonMutation')
             }
         }, 
 
@@ -172,9 +173,6 @@ export default {
             this.$store.commit('totalAmountOrderedMutation', watch)
             this.$store.dispatch('automaticallyCloseNotification')
             this.$store.dispatch('anableNotificationAfterAutomaticallyClosed')
-
-            this.$store.commit('pressedAddButtonMutation')
-
         }, 
 
         showMoreDetails(watchId) {
