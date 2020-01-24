@@ -78,11 +78,11 @@
             <div class="show-more">
                 <div class="show-more-button" v-if="!watch.moreDetails" @click="showMoreDetails(watch.id)">
                     <img src="img/icons/arrow-bottom.png" />
-                    <span class="tooltip">Show more details</span>
+                    <!-- <span class="tooltip">Show more details</span> -->
                 </div>
                 <div class="show-more-button" v-else @click="hideMoreDetails(watch.id)">
                     <img src="img/icons/arrow-top.png" />
-                    <span class="tooltip">Hide more details</span>
+                    <!-- <span class="tooltip">Hide more details</span> -->
                 </div>
             </div>
         </div>

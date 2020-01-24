@@ -79,6 +79,7 @@
             }
             @media only screen and (max-width: 350px) {
                 left: 8vw !important;
+                width: 85vw !important;
             }
         }
         .v--modal-box {
@@ -108,8 +109,10 @@
                 width: 300px !important;
             }
             @media only screen and (max-width: 480px) {
-                // height: 90px !important;
                 width: 300px !important;
+            }
+            @media only screen and (max-width: 350px) {
+                width:250px !important;
             }
             @keyframes fadeIn {
                 0% {
@@ -151,11 +154,16 @@
                     width: 400px !important;
                 }
                 @media only screen and (max-width: 580px) {
+                    height: 137px !important;
+                    width: 302px !important;
+                }
+                @media only screen and (max-width: 480px) {
                     height: 147px !important;
                     width: 302px !important;
                 }
                 @media only screen and (max-width: 350px) {
                     box-shadow: 0 1px 10px rgba(169, 131, 107, 0.7), 0 0 1px rgba(169, 131, 107, 0.7);
+                    width: 252px !important;
                 }
             }
             .notification-box {

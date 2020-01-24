@@ -5,7 +5,7 @@
         height: 100%;
         .v--modal {
             top: 78px !important;
-            left:78vw !important;
+            left:76% !important;
             width: 22vw !important;
             position: absolute !important;
             @media only screen and (max-width: 1900px) {
@@ -103,9 +103,17 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                width: 85%;
+                width: 80%;
+                @media only screen and (max-width: 1900px) {
+                    padding-right: 10%;
+                }
                 @media only screen and (max-width: 768px) {
+                    padding-right: 0;
                     width: 90%;
+                }
+                @media only screen and (max-width: 480px) {
+                    padding-right: 0;
+                    width: 85%;
                 }
                 .close-button {
                     width: 8%;

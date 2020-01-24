@@ -428,7 +428,7 @@ body {
       justify-content: flex-end; }
       @media only screen and (max-width: 768px) {
         .footer-sections .section-newsletter-wrapper1 .section-newsletter-wrapper2 {
-          justify-content: flex-start; } }
+          justify-content: center; } }
       .footer-sections .section-newsletter-wrapper1 .section-newsletter-wrapper2 .section-newsletter {
         width: 92%;
         display: flex;
@@ -436,7 +436,7 @@ body {
         flex-direction: column; }
         @media only screen and (max-width: 768px) {
           .footer-sections .section-newsletter-wrapper1 .section-newsletter-wrapper2 .section-newsletter {
-            width: 100%; } }
+            width: 95%; } }
         .footer-sections .section-newsletter-wrapper1 .section-newsletter-wrapper2 .section-newsletter h1 {
           padding-left: 15px; }
           @media only screen and (max-width: 768px) {
@@ -450,7 +450,8 @@ body {
           margin-top: 115px; }
           @media only screen and (max-width: 768px) {
             .footer-sections .section-newsletter-wrapper1 .section-newsletter-wrapper2 .section-newsletter .section-button-wrapper {
-              margin-top: 30px; } }
+              margin-top: 30px;
+              padding-left: 0px; } }
           .footer-sections .section-newsletter-wrapper1 .section-newsletter-wrapper2 .section-newsletter .section-button-wrapper .section-button {
             border: 1px solid #d7d7d7;
             width: 80%;
@@ -671,6 +672,9 @@ body {
     @media only screen and (max-width: 768px) {
       .visible-details h1 {
         font-size: 14pt; } }
+    @media only screen and (max-width: 480px) {
+      .visible-details h1 {
+        font-size: 13pt; } }
   .visible-details h2 {
     font-family: 'LatoRegular';
     font-size: 12pt;
@@ -682,6 +686,9 @@ body {
     @media only screen and (max-width: 768px) {
       .visible-details h2 {
         font-size: 12pt; } }
+    @media only screen and (max-width: 480px) {
+      .visible-details h2 {
+        font-size: 10pt; } }
   .visible-details h3 {
     font-family: 'LatoRegular';
     font-size: 10pt;
@@ -696,6 +703,9 @@ body {
       .visible-details h3 {
         font-size: 10pt;
         display: inline; } }
+    @media only screen and (max-width: 480px) {
+      .visible-details h3 {
+        font-size: 9pt; } }
   .visible-details p {
     font-family: 'LatoRegular';
     font-size: 10pt;
@@ -709,6 +719,9 @@ body {
       .visible-details p {
         font-size: 10pt;
         display: inline; } }
+    @media only screen and (max-width: 480px) {
+      .visible-details p {
+        font-size: 9pt; } }
   .visible-details .star {
     width: 6%;
     display: flex;
@@ -826,6 +839,7 @@ body {
         justify-content: center;
         margin-top: 10px; } }
     .visible-details .add-watch .exclamation {
+      padding-top: 25px;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -888,13 +902,17 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 15px 0; }
+      padding: 15px 0;
+      margin-bottom: 10px; }
       @media only screen and (max-width: 1260px) {
         .visible-details .add-watch .add, .visible-details .add-watch .added, .visible-details .add-watch .unabled {
           padding: 10px 3px; } }
       @media only screen and (max-width: 768px) {
         .visible-details .add-watch .add, .visible-details .add-watch .added, .visible-details .add-watch .unabled {
           width: 30%; } }
+      @media only screen and (max-width: 480px) {
+        .visible-details .add-watch .add, .visible-details .add-watch .added, .visible-details .add-watch .unabled {
+          width: 100%; } }
       .visible-details .add-watch .add img, .visible-details .add-watch .added img, .visible-details .add-watch .unabled img {
         max-width: 100%; }
       .visible-details .add-watch .add h4, .visible-details .add-watch .added h4, .visible-details .add-watch .unabled h4 {
@@ -967,10 +985,11 @@ body {
             font-size: 5pt; } }
         @media only screen and (max-width: 768px) {
           .visible-details .add-watch .unabled h5 {
-            width: 50%;
+            width: 60%;
             font-size: 7pt; } }
       .visible-details .add-watch .unabled img {
-        margin-right: 5px; }
+        margin-right: 5px;
+        max-width: 100%; }
         @media only screen and (max-width: 1550px) {
           .visible-details .add-watch .unabled img {
             margin-right: 3px; } }
@@ -979,8 +998,10 @@ body {
             margin-right: 2px; } }
         @media only screen and (max-width: 768px) {
           .visible-details .add-watch .unabled img {
-            width: 10%;
             margin-right: 10px; } }
+        @media only screen and (max-width: 480px) {
+          .visible-details .add-watch .unabled img {
+            max-width: 100%; } }
   .visible-details .show-more {
     width: 4%;
     display: flex;
@@ -1060,7 +1081,8 @@ body {
     align-items: center; }
     @media only screen and (max-width: 768px) {
       .more-details .segment {
-        width: 100%; } }
+        width: 100%;
+        margin-bottom: 2px; } }
   .more-details .gallery-images-wrapper1 {
     width: 15%;
     display: flex;
@@ -1095,8 +1117,11 @@ body {
               width: 80%; } }
           @media only screen and (max-width: 768px) {
             .more-details .gallery-images-wrapper1 .gallery-images-wrapper2 .gallery-images img {
-              width: 70%;
+              width: 55%;
               margin-bottom: 8px; } }
+          @media only screen and (max-width: 480px) {
+            .more-details .gallery-images-wrapper1 .gallery-images-wrapper2 .gallery-images img {
+              width: 70%; } }
           .more-details .gallery-images-wrapper1 .gallery-images-wrapper2 .gallery-images img:hover {
             opacity: 1;
             cursor: pointer; }
@@ -1123,6 +1148,10 @@ body {
           font-size: 11pt;
           color: #a0765b;
           margin-right: 10px; } }
+      @media only screen and (max-width: 480px) {
+        .more-details .more-details-text p {
+          font-size: 10pt;
+          margin-right: 0; } }
   .more-details .fullscreen-button-wrapper {
     width: 12%;
     display: flex;
@@ -1186,6 +1215,9 @@ body {
     font-size: 11pt;
     color: #7583a0;
     margin-right: 10px; } }
+@media only screen and (max-width: 480px) {
+  .more-details-label {
+    font-size: 10pt; } }
 
 .v--modal-overlay[data-modal="cart-modal"] {
   background: transparent; }
@@ -1194,7 +1226,7 @@ body {
     height: 100%; }
     .v--modal-overlay[data-modal="cart-modal"] .v--modal-background-click .v--modal {
       top: 78px !important;
-      left: 78vw !important;
+      left: 76% !important;
       width: 22vw !important;
       position: absolute !important; }
       @media only screen and (max-width: 1900px) {
@@ -1283,10 +1315,18 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 85%; }
+        width: 80%; }
+        @media only screen and (max-width: 1900px) {
+          .cart-modal-content .products .cart-single-product-wrapper .cart-single-product {
+            padding-right: 10%; } }
         @media only screen and (max-width: 768px) {
           .cart-modal-content .products .cart-single-product-wrapper .cart-single-product {
+            padding-right: 0;
             width: 90%; } }
+        @media only screen and (max-width: 480px) {
+          .cart-modal-content .products .cart-single-product-wrapper .cart-single-product {
+            padding-right: 0;
+            width: 85%; } }
         .cart-modal-content .products .cart-single-product-wrapper .cart-single-product .close-button {
           width: 8%; }
           .cart-modal-content .products .cart-single-product-wrapper .cart-single-product .close-button button {
@@ -1461,7 +1501,8 @@ body {
           width: 95vw !important; } }
       @media only screen and (max-width: 350px) {
         .v--modal-overlay[data-modal="notification"] .v--modal-background-click .v--modal {
-          left: 8vw !important; } }
+          left: 8vw !important;
+          width: 85vw !important; } }
     .v--modal-overlay[data-modal="notification"] .v--modal-background-click .v--modal-box {
       display: flex;
       justify-content: center;
@@ -1490,6 +1531,9 @@ body {
       @media only screen and (max-width: 480px) {
         .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper {
           width: 300px !important; } }
+      @media only screen and (max-width: 350px) {
+        .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper {
+          width: 250px !important; } }
 @keyframes fadeIn {
   0% {
     opacity: 0.1; }
@@ -1526,11 +1570,16 @@ body {
             width: 400px !important; } }
         @media only screen and (max-width: 580px) {
           .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .outer-shadow {
+            height: 137px !important;
+            width: 302px !important; } }
+        @media only screen and (max-width: 480px) {
+          .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .outer-shadow {
             height: 147px !important;
             width: 302px !important; } }
         @media only screen and (max-width: 350px) {
           .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .outer-shadow {
-            box-shadow: 0 1px 10px rgba(169, 131, 107, 0.7), 0 0 1px rgba(169, 131, 107, 0.7); } }
+            box-shadow: 0 1px 10px rgba(169, 131, 107, 0.7), 0 0 1px rgba(169, 131, 107, 0.7);
+            width: 252px !important; } }
       .v--modal-overlay[data-modal="notification"] .v--modal-background-click .notification-box-wrapper .notification-box {
         flex-direction: column;
         border: 1px solid #ddccb8 !important;

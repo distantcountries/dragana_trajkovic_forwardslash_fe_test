@@ -169,7 +169,7 @@
             display: flex;
             justify-content: flex-end;
             @media only screen and (max-width: 768px) {
-                justify-content: flex-start;
+                justify-content: center;
             }
 
             .section-newsletter {
@@ -178,7 +178,7 @@
                 justify-content: center;
                 flex-direction: column;
                 @media only screen and (max-width: 768px) {
-                    width: 100%;
+                    width: 95%;
                 }
                 h1 {
                     padding-left: 15px;
@@ -194,6 +194,8 @@
                     margin-top: 115px;
                     @media only screen and (max-width: 768px) {
                         margin-top: 30px;
+                        padding-left: 0px;
+
                     }
                     .section-button {
                         border: 1px solid #d7d7d7;
