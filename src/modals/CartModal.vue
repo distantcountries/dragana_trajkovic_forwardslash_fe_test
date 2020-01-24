@@ -10,13 +10,14 @@
         <div class="header-wrapper">
           <div class="header">
             <h1>My Cart</h1>
+            <img src="img/icons/close.png" class="cart-modal-close-button" @click="handleClose"/>
           </div>
         </div>
         <div class="products">
           <div class="cart-single-product-wrapper" v-for="(watch, index) in watchesInCart" :key="index">
             <div class="cart-single-product">
               <div class="close-button">
-                <button @click="handleDelete(watch)"><img src="./../../public/img/icons/close.png"/></button>
+                <button @click="handleDelete(watch)"><img src="img/icons/close.png"/></button>
               </div>
               <div class="title">
                 <h2>
@@ -34,8 +35,8 @@
                   <p>{{watch.orderQuantity}}</p>
                 </div>
                 <div class="icons">
-                  <button @click="handleIncrement(watch)"><img src="./../../public/img/icons/arrow-top.png"/></button>
-                  <button @click="handleDecrement(watch)"><img src="./../../public/img/icons/arrow-bottom.png"/></button>
+                  <button @click="handleIncrement(watch)"><img src="img/icons/arrow-top.png"/></button>
+                  <button @click="handleDecrement(watch)"><img src="img/icons/arrow-bottom.png"/></button>
                 </div>
               </div>
             </div>
@@ -76,7 +77,6 @@ export default {
     handleDelete(watch) {
       this.$store.commit('removeWatchFromCartMutation', watch)
     },
-
     handleCheckout() {
       this.cart.forEach(function (e) {
         console.log(
@@ -87,7 +87,9 @@ export default {
         )
       })
     },
-
+    handleClose() {
+      this.$modal.hide('cart-modal');
+    },
     handleIncrement(watch) {
       if(watch.orderQuantity < watch.quantity) {
         watchesService.increment(watch)

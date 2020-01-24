@@ -32,11 +32,14 @@
     flex-direction: column;
     justify-content: center;
     width: 15.2%;
+    @media only screen and (max-width: 1440px) {
+        width: 22%;
+    }
     @media only screen and (max-width: 1260px) {
         width: 20%;
     }
     @media only screen and (max-width: 960px) {
-        width: 25%;
+        width: 30%;
     }
     @media only screen and (max-width: 480px) {
     }
@@ -79,11 +82,18 @@
     border-right: 1px solid #e6e6e6;
     width: 15.2%;
     position: relative;
+    @media only screen and (max-width: 1440px) {
+        width: 22%;
+    }
     @media only screen and (max-width: 1260px) {
         width: 20%;
     }
     @media only screen and (max-width: 960px) {
         width: 25%;
+    }
+    @media only screen and (max-width: 758px) {
+        width: 35%;
+        padding-right: 10px;
     }
     .cart {
         height: 100%;
@@ -146,6 +156,9 @@
             font-size: 14pt;
             color: $secondaryColor;
             margin-top: 4px;
+            @media only screen and (max-width: 1440px) {
+                font-size: 12pt;
+            }
             @media only screen and (max-width: 1260px) {
                 font-size: 11pt;
             }
