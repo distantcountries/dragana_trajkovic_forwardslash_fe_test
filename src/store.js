@@ -13,7 +13,8 @@ export const store = new Vuex.Store({
         totalAmount: 0, 
         totalItems: 0, 
         justAddedItem: 0,
-        cartNotification: true
+        cartNotification: true,
+        pressedAddButton: false
     }, 
     getters: {
         fillteredWatchesStore(state) {

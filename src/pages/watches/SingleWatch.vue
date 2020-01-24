@@ -112,7 +112,7 @@
             <div class="fullscreen-button-wrapper segment">
                 <div class="fullscreen-button">
                     <img @click="handleFullscreen" src="img/icons/fullscreen.png"/>
-                    <span class="tooltip" @click="handleFullscreen">Fullscreen</span>
+                    <!-- <span class="tooltip" @click="handleFullscreen">Fullscreen</span> -->
                 </div>
             </div>
         </div>
@@ -125,6 +125,12 @@ export default {
     props: [
         'watch'
     ],
+
+    computed: {
+        pressedAddButton() {
+            return this.$store.state.pressedAddButton
+        }
+    },
     
     methods: {
         handleStar(watchId) {
@@ -146,8 +152,10 @@ export default {
         handleDecrement(watch) {
             if(watch.orderQuantity > 0) {
                 watchesService.decrement(watch)
-                this.$store.commit('decrementTotalItems')
-                this.$store.commit('decreaseTotalAmount', watch)
+                if (this.pressedAddButton) {
+                    this.$store.commit('decrementTotalItems')
+                    this.$store.commit('decreaseTotalAmount', watch)
+                }
             }
             if(watch.orderQuantity === 0 ) {
                 this.$store.commit('removeWatchFromCartMutation', watch)
